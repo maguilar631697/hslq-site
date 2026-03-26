@@ -378,6 +378,25 @@ h1, h2, h3, h4 {
   font-size: 14px;
 }
 
+/* ===== SPLIT SECTIONS (50/50 full width) ===== */
+.split-section {
+  display: flex;
+  min-height: 450px;
+}
+.split-left {
+  width: 50%;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.split-right {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
 /* ===== SECTIONS PADDING ===== */
 .section-white,
 .section-light {
@@ -402,6 +421,10 @@ h1, h2, h3, h4 {
   .container { padding-left: 20px; padding-right: 20px; }
 
   .orange-card { margin-bottom: 0; }
+
+  .split-section { flex-direction: column; }
+  .split-left, .split-right { width: 100%; }
+  .split-right { min-height: 250px; }
 
   .section-heading { font-size: 30px; }
   .script-label { font-size: 30px; }
