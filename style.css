@@ -272,6 +272,20 @@ h1, h2, h3, h4 {
   scroll-snap-align: start;
 }
 
+/* ===== IMAGE ROW (2-up) ===== */
+.image-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px 0;
+}
+.image-row img {
+  flex: 0 1 350px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 /* ===== GALLERY GRID ===== */
 .gallery-grid {
   display: grid;
