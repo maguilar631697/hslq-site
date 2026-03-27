@@ -459,7 +459,7 @@ p, li, span, div {
 
   .split-section { flex-direction: column; }
   .split-left, .split-right { width: 100%; }
-  .split-right { min-height: 300px; }
+  .split-right { min-height: 400px; }
   .split-left { padding: 60px 40px; }
 
   .hero-content { padding: 60px 40px; }
@@ -536,7 +536,7 @@ p, li, span, div {
 
   /* Split sections */
   .split-left { padding: 40px 20px; }
-  .split-right { min-height: 280px; }
+  .split-right { min-height: 350px; aspect-ratio: 4/3; }
   .split-left h2 { font-size: 28px !important; }
   .split-left p { font-size: 16px !important; line-height: 1.7 !important; }
 
