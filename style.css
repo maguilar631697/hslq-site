@@ -55,6 +55,21 @@ p, li, span, div {
   line-height: 1.1;
 }
 
+.body-text-white {
+  color: #fff;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.6;
+}
+
+.section-heading-sm {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  font-size: clamp(26px, 4vw, 42px);
+  color: rgba(246,134,35,1);
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
 /* ===== BUTTONS ===== */
 .btn {
   display: inline-block;
