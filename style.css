@@ -239,8 +239,9 @@ p, li, span, div {
   flex: 1;
   min-width: min(300px, 100%);
   max-width: 100%;
+  overflow: hidden;
 }
-.section-col img { max-width: 100%; }
+.section-col img { max-width: 100%; height: auto; }
 
 .section-text-center {
   max-width: 900px;
@@ -253,13 +254,15 @@ p, li, span, div {
   display: flex;
   width: 100%;
   min-height: 550px;
+  overflow: hidden;
 }
 .split-left {
   width: 50%;
-  padding: 80px clamp(20px, 4vw, 60px);
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .split-right {
   width: 50%;
@@ -288,9 +291,12 @@ p, li, span, div {
 
 /* ===== STYLED IMAGE ===== */
 .styled-img {
-  border: 12px solid #fff;
+  border: clamp(6px, 1.5vw, 12px) solid #fff;
   border-radius: 2%;
   box-shadow: rgba(0,0,0,0.25) 0 3px 11px;
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto;
 }
 
 /* ===== CONTENT LIST ===== */
