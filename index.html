@@ -62,17 +62,20 @@ h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-h
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
-/* HERO — SPLIT + AURORA + MARQUEE */
-.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
-.hero-left{position:relative;display:flex;flex-direction:column;justify-content:center;padding:80px 60px 80px 60px;z-index:2}
-.hero-left::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#0a0a0a 0%,#1a0d00 40%,#2d1200 70%,#0a0a0a 100%);background-size:400% 400%;animation:auroraShift 12s ease infinite;z-index:-1}
-.hero-left .logo-badge{width:100px;margin-bottom:30px;opacity:0;animation:fadeUp .8s .1s forwards}
-.hero-left .script-label{font-family:'Satisfy',cursive;font-size:clamp(28px,4vw,44px);color:#f68623;margin-bottom:10px;opacity:0;animation:fadeUp .8s .3s forwards}
-.hero-left h1{font-size:clamp(30px,4vw,52px);margin-bottom:20px;opacity:0;animation:fadeUp .8s .5s forwards;line-height:1.05}
-.hero-left p{font-size:clamp(15px,1.5vw,19px);color:rgba(255,255,255,.75);margin-bottom:35px;max-width:500px;opacity:0;animation:fadeUp .8s .7s forwards}
-.hero-right{position:relative;overflow:hidden}
-.hero-right img{width:100%;height:100%;object-fit:cover;animation:kenBurns 20s ease infinite alternate}
-.hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(270deg,transparent 60%,#0a0a0a 100%)}
+/* HERO — CINEMATIC FULL SCREEN */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;animation:kenBurns 25s ease infinite alternate}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,.85) 0%,rgba(45,18,0,.6) 40%,rgba(10,10,10,.8) 70%,rgba(10,10,10,.95) 100%);background-size:400% 400%;animation:auroraShift 15s ease infinite}
+.hero-content{position:relative;z-index:2;max-width:900px;padding:0 30px}
+.hero-content .logo-badge{width:100px;margin:0 auto 30px;opacity:0;animation:fadeUp .8s .1s forwards}
+.hero-content .script-label{font-family:'Satisfy',cursive;font-size:clamp(28px,5vw,48px);color:#f68623;margin-bottom:10px;opacity:0;animation:fadeUp .8s .3s forwards}
+.hero-content h1{font-size:clamp(36px,8vw,80px);margin-bottom:20px;opacity:0;animation:fadeUp .8s .5s forwards;letter-spacing:-1px}
+.hero-content h1 .thin{font-weight:400;color:rgba(255,255,255,.6)}
+.hero-content p{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.7);margin-bottom:35px;opacity:0;animation:fadeUp .8s .7s forwards;max-width:600px;margin-left:auto;margin-right:auto}
+.hero-cta{opacity:0;animation:fadeUp .8s .9s forwards}
+.hero-scroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;opacity:0;animation:fadeUp .8s 1.2s forwards}
+.hero-scroll span{display:block;width:24px;height:38px;border:2px solid rgba(255,255,255,.3);border-radius:12px;position:relative}
+.hero-scroll span::after{content:'';position:absolute;top:6px;left:50%;width:4px;height:8px;margin-left:-2px;background:#f68623;border-radius:2px;animation:scrollBob 1.8s ease infinite}
 
 /* MARQUEE */
 .marquee-wrap{position:relative;overflow:hidden;background:#050505;padding:18px 0;border-top:1px solid rgba(246,134,35,.15);border-bottom:1px solid rgba(246,134,35,.15)}
@@ -81,7 +84,8 @@ h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-h
 .marquee-track span.accent{color:#f68623;opacity:.85}
 
 @keyframes auroraShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-@keyframes kenBurns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.1) translate(-2%,-2%)}}
+@keyframes kenBurns{0%{transform:scale(1)}100%{transform:scale(1.12)}}
+@keyframes scrollBob{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(10px);opacity:.3}}
 
 /* BUTTONS */
 .btn{display:inline-block;padding:14px 36px;border-radius:50px;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .3s;cursor:pointer;border:none}
@@ -180,16 +184,12 @@ section{padding:100px 0}
   .nav-links.open{display:flex}
   .nav-links a{font-size:20px}
   .hamburger{display:flex;z-index:1002}
-  .hero{grid-template-columns:1fr;min-height:auto}
-  .hero-left{padding:100px 24px 50px;text-align:center}
-  .hero-left .logo-badge{width:80px;margin:0 auto 20px}
-  .hero-left h1{font-size:clamp(26px,7vw,38px)}
-  .hero-left p{margin-left:auto;margin-right:auto;font-size:15px}
-  .hero-left .btn{padding:12px 28px;font-size:13px}
-  .hero-left .btn-outline{margin-left:0!important;margin-top:10px;display:inline-block}
-  .hero-right{height:45vh;min-height:250px}
-  .hero-right img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
-  .hero-right::after{background:linear-gradient(180deg,#0a0a0a 0%,transparent 20%,transparent 80%,#0a0a0a 100%)}
+  .hero{min-height:100vh}
+  .hero-bg{background-attachment:scroll;animation:none}
+  .hero-content h1{font-size:clamp(32px,10vw,52px)}
+  .hero-content .btn{padding:12px 28px;font-size:13px}
+  .hero-content .btn-outline{margin-left:0!important;margin-top:10px;display:inline-block}
+  .hero-scroll{display:none}
   .marquee-wrap{padding:14px 0}
   .marquee-track span{font-size:14px;padding:0 20px;letter-spacing:2px}
   .two-col,.split,.footer-grid{grid-template-columns:1fr}
@@ -200,7 +200,7 @@ section{padding:100px 0}
   .stats-row{grid-template-columns:1fr;gap:25px}
   .image-row{grid-template-columns:1fr}
   .image-row img{height:220px}
-  .hero-bg,.section-accent .accent-bg{background-attachment:scroll}
+  .section-accent .accent-bg{background-attachment:scroll}
   section{padding:60px 0}
   .container{padding:0 20px}
   .split-content{padding:40px 24px}
@@ -234,21 +234,21 @@ section{padding:100px 0}
   </button>
 </nav>
 
-<!-- HERO — SPLIT -->
+<!-- HERO — CINEMATIC -->
 <section class="hero" id="home">
-  <div class="hero-left">
+  <div class="hero-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
     <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo-Big-about.png" alt="HSLQ - It's Up To Us" class="logo-badge">
     <p class="script-label">Who We Are</p>
-    <h1>Friends of<br>Huntington Station<br>Latin Quarter</h1>
-    <p>A not-for-profit civic organization promoting community development, cultural preservation, and unity in Huntington Station.</p>
-    <div style="opacity:0;animation:fadeUp .8s .9s forwards">
+    <h1>Huntington Station<br><span class="thin">Latin Quarter</span></h1>
+    <p>A not-for-profit civic organization promoting community development, cultural preservation, and unity.</p>
+    <div class="hero-cta">
       <a href="#about" class="btn btn-primary">Learn More</a>
       <a href="#contact" class="btn btn-outline" style="margin-left:12px">Join Us</a>
     </div>
   </div>
-  <div class="hero-right">
-    <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg" alt="Huntington Station Community">
-  </div>
+  <div class="hero-scroll"><span></span></div>
 </section>
 
 <!-- MARQUEE -->
