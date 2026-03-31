@@ -132,8 +132,8 @@ section{padding:100px 0}
 .split-img{background-size:cover;background-position:center;min-height:400px}
 
 /* IMAGE ROW */
-.image-row{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.image-row img{width:100%;height:300px;object-fit:cover}
+.image-row{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:0 4px}
+.image-row img{width:100%;height:auto;object-fit:contain;border-radius:6px;background:#111}
 
 /* STATS */
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center;margin-top:60px}
@@ -198,8 +198,8 @@ section{padding:100px 0}
   .gallery{grid-template-columns:repeat(2,1fr);gap:6px}
   .gallery img{height:160px}
   .stats-row{grid-template-columns:1fr;gap:25px}
-  .image-row{grid-template-columns:1fr}
-  .image-row img{height:220px}
+  .image-row{grid-template-columns:1fr 1fr}
+  .image-row img{height:auto}
   .section-accent .accent-bg{background-attachment:scroll}
   section{padding:60px 0}
   .container{padding:0 20px}
@@ -330,8 +330,10 @@ section{padding:100px 0}
 
 <!-- IMAGE ROW -->
 <div class="image-row">
-  <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Meals-Served.jpg" alt="7,135 Meals Served">
-  <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/free+dinner+pickup+-e-420w.jpg" alt="Drive-Up Family Meals">
+  <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Meals-Served-420w.jpg" alt="7,135 Meals Served">
+  <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/free+dinner+pickup+-e-420w.jpg" alt="Free Dinner Pick Up">
+  <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/free+dinner+pickup+-s-420w.jpg" alt="Drive-Up Family Meals">
+  <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/weekly%2Bmeals-420w.jpg" alt="Weekly Meals Program">
 </div>
 
 <!-- CHALLENGES -->
