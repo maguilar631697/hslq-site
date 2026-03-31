@@ -39,20 +39,23 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:hidden}
-body{font-family:'Poppins',sans-serif;font-size:18px;color:#e0e0e0;line-height:1.8;background:#0a0a0a;overflow-x:hidden;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',sans-serif;font-size:18px;color:#383838;line-height:1.8;background:#fff;overflow-x:hidden;-webkit-text-size-adjust:100%}
 img{max-width:100%;height:auto;display:block}
 a{color:#f68623;text-decoration:none;transition:color .3s}
-a:hover{color:#ffaa55}
-h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-height:1.1}
+a:hover{color:#d4710e}
+h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#1a1a1a;line-height:1.1}
 ::selection{background:#f68623;color:#fff}
 
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,box-shadow .4s}
-.nav.scrolled{background:rgba(10,10,10,.95);box-shadow:0 2px 20px rgba(0,0,0,.5)}
+.nav.scrolled{background:rgba(255,255,255,.97);box-shadow:0 2px 20px rgba(0,0,0,.08)}
 .nav-logo img{height:50px;transition:transform .3s}
 .nav-logo img:hover{transform:scale(1.05)}
 .nav-links{display:flex;gap:30px;align-items:center}
 .nav-links a{color:#fff;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;position:relative;padding:4px 0}
+.nav.scrolled .nav-links a{color:#1a1a1a}
+.nav.scrolled .nav-links a:hover{color:#f68623}
+.nav.scrolled .hamburger span{background:#1a1a1a}
 .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:#f68623;transition:width .3s}
 .nav-links a:hover::after,.nav-links a.active::after{width:100%}
 .nav-links a:hover{color:#f68623}
@@ -69,7 +72,7 @@ h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-h
 .hero-content{position:relative;z-index:2;max-width:900px;padding:0 30px}
 .hero-content .logo-badge{width:100px;margin:0 auto 30px;opacity:0;animation:fadeUp .8s .1s forwards}
 .hero-content .script-label{font-family:'Satisfy',cursive;font-size:clamp(28px,5vw,48px);color:#f68623;margin-bottom:10px;opacity:0;animation:fadeUp .8s .3s forwards}
-.hero-content h1{font-size:clamp(36px,8vw,80px);margin-bottom:20px;opacity:0;animation:fadeUp .8s .5s forwards;letter-spacing:-1px}
+.hero-content h1{font-size:clamp(36px,8vw,80px);margin-bottom:20px;opacity:0;animation:fadeUp .8s .5s forwards;letter-spacing:-1px;color:#fff}
 .hero-content h1 .thin{font-weight:400;color:rgba(255,255,255,.6)}
 .hero-content p{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.7);margin-bottom:35px;opacity:0;animation:fadeUp .8s .7s forwards;max-width:600px;margin-left:auto;margin-right:auto}
 .hero-cta{opacity:0;animation:fadeUp .8s .9s forwards}
@@ -78,10 +81,10 @@ h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-h
 .hero-scroll span::after{content:'';position:absolute;top:6px;left:50%;width:4px;height:8px;margin-left:-2px;background:#f68623;border-radius:2px;animation:scrollBob 1.8s ease infinite}
 
 /* MARQUEE */
-.marquee-wrap{position:relative;overflow:hidden;background:#050505;padding:18px 0;border-top:1px solid rgba(246,134,35,.15);border-bottom:1px solid rgba(246,134,35,.15)}
+.marquee-wrap{position:relative;overflow:hidden;background:#f9f5f0;padding:18px 0;border-top:1px solid rgba(246,134,35,.2);border-bottom:1px solid rgba(246,134,35,.2)}
 .marquee-track{display:flex;width:max-content;animation:marqueeScroll 25s linear infinite}
-.marquee-track span{font-family:'Work Sans',sans-serif;font-weight:800;font-size:clamp(18px,2.5vw,28px);text-transform:uppercase;letter-spacing:3px;white-space:nowrap;padding:0 40px;color:rgba(255,255,255,.55)}
-.marquee-track span.accent{color:#f68623;opacity:.85}
+.marquee-track span{font-family:'Work Sans',sans-serif;font-weight:800;font-size:clamp(18px,2.5vw,28px);text-transform:uppercase;letter-spacing:3px;white-space:nowrap;padding:0 40px;color:rgba(0,0,0,.2)}
+.marquee-track span.accent{color:#f68623;opacity:.7}
 
 @keyframes auroraShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 @keyframes kenBurns{0%{transform:scale(1)}100%{transform:scale(1.12)}}
@@ -91,15 +94,15 @@ h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-h
 .btn{display:inline-block;padding:14px 36px;border-radius:50px;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .3s;cursor:pointer;border:none}
 .btn-primary{background:#f68623;color:#fff}
 .btn-primary:hover{background:#ff9a3c;transform:translateY(-2px);box-shadow:0 8px 25px rgba(246,134,35,.4);color:#fff}
-.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
-.btn-outline:hover{background:#fff;color:#0a0a0a;transform:translateY(-2px)}
+.btn-outline{background:transparent;color:#1a1a1a;border:2px solid #1a1a1a}
+.btn-outline:hover{background:#1a1a1a;color:#fff;transform:translateY(-2px)}
 
 /* SECTIONS */
 section{padding:100px 0}
 .container{max-width:1200px;margin:0 auto;padding:0 30px}
 .script-label{font-family:'Satisfy',cursive;font-size:clamp(24px,3vw,38px);color:#f68623;margin-bottom:8px;line-height:1}
 .section-title{font-size:clamp(28px,4vw,48px);margin-bottom:25px}
-.section-text{font-size:17px;color:rgba(255,255,255,.75);line-height:1.9;max-width:700px}
+.section-text{font-size:17px;color:#555;line-height:1.9;max-width:700px}
 
 /* REVEAL ANIMATIONS */
 .reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
@@ -111,19 +114,22 @@ section{padding:100px 0}
 
 /* TWO COL */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.two-col img{border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.two-col img{border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.1)}
 
-/* DARK / LIGHT SECTIONS */
-.section-dark{background:#0a0a0a}
-.section-darker{background:#050505}
+/* SECTION BACKGROUNDS */
+.section-light{background:#fff}
+.section-dark{background:#fff}
+.section-darker{background:#f9f5f0}
 .section-accent{position:relative;overflow:hidden}
 .section-accent .accent-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-attachment:fixed}
 .section-accent .accent-overlay{position:absolute;inset:0;background:rgba(246,134,35,.85)}
 .section-accent .container{position:relative;z-index:2}
+.section-accent h2,.section-accent .section-title{color:#fff}
+.section-accent .section-text{color:rgba(255,255,255,.9)}
 
 /* WHAT WE DO LIST */
 .what-list{list-style:none;padding:0;margin:20px 0 30px}
-.what-list li{padding:10px 0;padding-left:30px;position:relative;font-size:17px;color:rgba(255,255,255,.8)}
+.what-list li{padding:10px 0;padding-left:30px;position:relative;font-size:17px;color:#555}
 .what-list li::before{content:'';position:absolute;left:0;top:18px;width:12px;height:12px;border-radius:50%;background:#f68623}
 
 /* SPLIT SECTION */
@@ -133,42 +139,42 @@ section{padding:100px 0}
 
 /* IMAGE ROW */
 .image-row{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:0 4px}
-.image-row img{width:100%;height:auto;object-fit:contain;border-radius:6px;background:#111}
+.image-row img{width:100%;height:auto;object-fit:contain;border-radius:6px;background:#f5f5f5}
 
 /* STATS */
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center;margin-top:60px}
 .stat-num{font-family:'Work Sans',sans-serif;font-size:clamp(36px,5vw,56px);font-weight:800;color:#f68623}
-.stat-label{font-size:15px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+.stat-label{font-size:15px;color:#888;text-transform:uppercase;letter-spacing:1px;margin-top:5px}
 
 /* GALLERY */
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:40px}
 .gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px;transition:transform .4s,box-shadow .4s;cursor:pointer}
-.gallery img:hover{transform:scale(1.05);box-shadow:0 12px 40px rgba(246,134,35,.3)}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 12px 40px rgba(0,0,0,.15)}
 
 /* CONTACT FORM */
 .contact-form{display:flex;flex-direction:column;gap:16px}
 .contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.contact-form input,.contact-form textarea{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:14px 18px;font-family:'Poppins',sans-serif;font-size:16px;color:#fff;transition:border-color .3s}
+.contact-form input,.contact-form textarea{background:#f9f5f0;border:1px solid #ddd;border-radius:8px;padding:14px 18px;font-family:'Poppins',sans-serif;font-size:16px;color:#1a1a1a;transition:border-color .3s}
 .contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:#f68623}
 .contact-form textarea{min-height:140px;resize:vertical}
-.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.4)}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#aaa}
 .btn-submit{background:#f68623;color:#fff;border:none;border-radius:50px;padding:16px 40px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .3s}
 .btn-submit:hover{background:#ff9a3c;transform:translateY(-2px);box-shadow:0 8px 25px rgba(246,134,35,.4)}
 
 /* MAP */
-.map-wrap{margin-top:30px;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.map-wrap{margin-top:30px;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.1)}
 .map-wrap iframe{display:block}
 
 /* FOOTER */
-.footer{background:#050505;padding:60px 0 30px;border-top:1px solid rgba(255,255,255,.08)}
+.footer{background:#1a1a1a;padding:60px 0 30px;border-top:none}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
 .footer h3{font-size:18px;margin-bottom:15px;color:#f68623}
 .footer p,.footer a,.footer li{font-size:15px;color:rgba(255,255,255,.6);line-height:1.8}
 .footer a:hover{color:#f68623}
 .footer ul{list-style:none}
 .footer ul li a{display:block;padding:3px 0}
-.footer-bottom{text-align:center;margin-top:40px;padding-top:25px;border-top:1px solid rgba(255,255,255,.08);font-size:14px;color:rgba(255,255,255,.35)}
-.social-icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);color:#fff;transition:all .3s;margin-right:8px}
+.footer-bottom{text-align:center;margin-top:40px;padding-top:25px;border-top:1px solid rgba(255,255,255,.1);font-size:14px;color:rgba(255,255,255,.35)}
+.social-icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;transition:all .3s;margin-right:8px}
 .social-icon:hover{background:#f68623;transform:translateY(-3px)}
 .social-icon svg{fill:currentColor}
 
@@ -180,9 +186,9 @@ section{padding:100px 0}
 @media(max-width:900px){
   .nav{padding:14px 20px}
   .nav-logo img{height:38px}
-  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,10,.98);flex-direction:column;justify-content:center;align-items:center;gap:25px;z-index:1001}
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);flex-direction:column;justify-content:center;align-items:center;gap:25px;z-index:1001}
   .nav-links.open{display:flex}
-  .nav-links a{font-size:20px}
+  .nav-links a{font-size:20px;color:#1a1a1a}
   .hamburger{display:flex;z-index:1002}
   .hero{min-height:100vh}
   .hero-bg{background-attachment:scroll;animation:none}
@@ -405,10 +411,10 @@ section{padding:100px 0}
         <h2 class="section-title">2025 Annual Toy Drive</h2>
         <p class="section-text">In the spirit of the holidays, I am reaching out to see if you would be willing to adopt a family for our 16th Annual HSLQ Toy Drive. All of the children in our drive are living below the poverty line, where the parents have a combined income of less than $31,200 a year, usually supporting a family of four. Typically the parents cannot afford to purchase gifts around the holidays so we try to make this event special for the entire family.</p>
         <p class="section-text" style="margin-top:15px">If you are interested in becoming a donor, we kindly ask that you spend at least <strong style="color:#f68623">$75 on each child</strong> as your gifts may be the only ones received by these special children. As we already have over <strong style="color:#f68623">180 children</strong> on our list, kindly indicate how many children you would like to "adopt" and I will send you a wish list. The date of the toy drive will be Sunday December 21st, therefore we are asking our donors to drop off the week of December 8th–12th, between the hours of 9am to 5pm.</p>
-        <p class="section-text" style="margin-top:15px"><strong style="color:#fff">DROP OFF LOCATION:</strong><br>Palacios Law Group/HSLQ Headquarters<br>1399 New York Avenue, Huntington Station</p>
+        <p class="section-text" style="margin-top:15px"><strong style="color:#1a1a1a">DROP OFF LOCATION:</strong><br>Palacios Law Group/HSLQ Headquarters<br>1399 New York Avenue, Huntington Station</p>
         <p class="section-text" style="margin-top:15px">Kindly wrap and label all bags with the family number, child's name, gender and age to minimize any confusion. Please try to include gift receipts whenever possible (especially with clothing). If you are unable to deliver the presents by Friday, December 12th, please contact us so we can arrange a time to meet.</p>
         <p class="section-text" style="margin-top:15px">If you are interested, please indicate how many children you wish to "adopt" and I will send you a wish list! Please also indicate if you wish to purchase a bicycle as we have several requests for them this year. The Huntington Girls Lacrosse team has volunteered to assemble any bicycles in advance of the drive.</p>
-        <p class="section-text" style="margin-top:15px">Happy Holidays!!<br><strong style="color:#fff">Laura Palacios</strong></p>
+        <p class="section-text" style="margin-top:15px">Happy Holidays!!<br><strong style="color:#1a1a1a">Laura Palacios</strong></p>
       </div>
     </div>
   </div>
@@ -510,7 +516,7 @@ section{padding:100px 0}
       </div>
       <div class="reveal-right">
         <h2 class="section-title" style="font-size:28px">Contact Us</h2>
-        <p style="color:rgba(255,255,255,.75);margin-bottom:5px"><strong style="color:#fff">1399 New York Avenue,<br>Huntington Station, NY 11746</strong></p>
+        <p style="color:#555;margin-bottom:5px"><strong style="color:#1a1a1a">1399 New York Avenue,<br>Huntington Station, NY 11746</strong></p>
         <p style="margin-bottom:25px"><a href="tel:631-673-1000" style="color:#f68623;font-size:20px;font-weight:600">631-673-1000</a></p>
         <div class="map-wrap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.8!2d-73.4113!3d40.8407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8289d4e24b7f7%3A0x7d7e5b04a4f6a0e5!2s1399+New+York+Ave%2C+Huntington+Station%2C+NY+11746!5e0!3m2!1sen!2sus!4v1" width="100%" height="350" style="border:0" allowfullscreen="" loading="lazy"></iframe>
