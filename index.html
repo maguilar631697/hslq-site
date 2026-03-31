@@ -1,170 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends of Huntington Station | Community of Huntington Station</title>
-  <link rel="icon" href="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/FAV-57px.png">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/FAV-57px.png">
+<title>Friends of Huntington Station Latin Quarter — Community, Pride, Unity</title>
+<meta name="description" content="Friends of Huntington Station Latin Quarter (HSLQ) is a not-for-profit civic organization promoting community development, neighborhood revitalization, cultural preservation, and youth enrichment in Huntington Station, NY.">
+<meta name="keywords" content="HSLQ, Huntington Station, Latin Quarter, community, nonprofit, Long Island, youth programs, neighborhood revitalization">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Friends of Huntington Station Latin Quarter">
+<meta property="og:description" content="A not-for-profit civic organization promoting community development, cultural preservation, and youth enrichment in Huntington Station, NY.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hslq.org/">
+<meta property="og:site_name" content="Friends of Huntington Station Latin Quarter">
+<meta property="og:image" content="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Friends of Huntington Station Latin Quarter">
+<meta name="twitter:description" content="Community development, cultural preservation, and youth enrichment in Huntington Station, NY.">
+<meta name="twitter:image" content="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Friends of Huntington Station Latin Quarter",
+  "alternateName":"HSLQ",
+  "url":"https://hslq.org/",
+  "description":"A not-for-profit civic organization promoting community development, neighborhood revitalization, cultural preservation, and youth enrichment.",
+  "address":{"@type":"PostalAddress","streetAddress":"1399 New York Avenue","addressLocality":"Huntington Station","addressRegion":"NY","postalCode":"11746","addressCountry":"US"},
+  "telephone":"631-673-1000",
+  "sameAs":["https://www.facebook.com/HSLQ1/"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Work+Sans:wght@400;600;800&family=Satisfy&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Poppins',sans-serif;font-size:18px;color:#e0e0e0;line-height:1.8;background:#0a0a0a;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:#f68623;text-decoration:none;transition:color .3s}
+a:hover{color:#ffaa55}
+h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-height:1.1}
+::selection{background:#f68623;color:#fff}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,box-shadow .4s}
+.nav.scrolled{background:rgba(10,10,10,.95);box-shadow:0 2px 20px rgba(0,0,0,.5)}
+.nav-logo img{height:50px;transition:transform .3s}
+.nav-logo img:hover{transform:scale(1.05)}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{color:#fff;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;position:relative;padding:4px 0}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:#f68623;transition:width .3s}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a:hover{color:#f68623}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;transition:all .3s}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-attachment:fixed;transform:scale(1.05)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.4) 0%,rgba(10,10,10,.7) 60%,rgba(10,10,10,.95) 100%)}
+.hero-content{position:relative;z-index:2;max-width:800px;padding:0 30px}
+.hero-content .script-label{font-family:'Satisfy',cursive;font-size:clamp(28px,5vw,48px);color:#f68623;margin-bottom:10px;opacity:0;animation:fadeUp .8s .3s forwards}
+.hero-content h1{font-size:clamp(32px,6vw,64px);margin-bottom:20px;opacity:0;animation:fadeUp .8s .5s forwards}
+.hero-content p{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.8);margin-bottom:30px;opacity:0;animation:fadeUp .8s .7s forwards}
+.hero-content .logo-badge{width:120px;margin:0 auto 30px;opacity:0;animation:fadeUp .8s .1s forwards}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:14px 36px;border-radius:50px;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .3s;cursor:pointer;border:none}
+.btn-primary{background:#f68623;color:#fff}
+.btn-primary:hover{background:#ff9a3c;transform:translateY(-2px);box-shadow:0 8px 25px rgba(246,134,35,.4);color:#fff}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
+.btn-outline:hover{background:#fff;color:#0a0a0a;transform:translateY(-2px)}
+
+/* SECTIONS */
+section{padding:100px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 30px}
+.script-label{font-family:'Satisfy',cursive;font-size:clamp(24px,3vw,38px);color:#f68623;margin-bottom:8px;line-height:1}
+.section-title{font-size:clamp(28px,4vw,48px);margin-bottom:25px}
+.section-text{font-size:17px;color:rgba(255,255,255,.75);line-height:1.9;max-width:700px}
+
+/* REVEAL ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-60px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(60px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+
+/* TWO COL */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.two-col img{border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+
+/* DARK / LIGHT SECTIONS */
+.section-dark{background:#0a0a0a}
+.section-darker{background:#050505}
+.section-accent{position:relative;overflow:hidden}
+.section-accent .accent-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-attachment:fixed}
+.section-accent .accent-overlay{position:absolute;inset:0;background:rgba(246,134,35,.85)}
+.section-accent .container{position:relative;z-index:2}
+
+/* WHAT WE DO LIST */
+.what-list{list-style:none;padding:0;margin:20px 0 30px}
+.what-list li{padding:10px 0;padding-left:30px;position:relative;font-size:17px;color:rgba(255,255,255,.8)}
+.what-list li::before{content:'';position:absolute;left:0;top:18px;width:12px;height:12px;border-radius:50%;background:#f68623}
+
+/* SPLIT SECTION */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
+.split-content{display:flex;flex-direction:column;justify-content:center;padding:60px 50px}
+.split-img{background-size:cover;background-position:center;min-height:400px}
+
+/* IMAGE ROW */
+.image-row{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.image-row img{width:100%;height:300px;object-fit:cover}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center;margin-top:60px}
+.stat-num{font-family:'Work Sans',sans-serif;font-size:clamp(36px,5vw,56px);font-weight:800;color:#f68623}
+.stat-label{font-size:15px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:40px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px;transition:transform .4s,box-shadow .4s;cursor:pointer}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 12px 40px rgba(246,134,35,.3)}
+
+/* CONTACT FORM */
+.contact-form{display:flex;flex-direction:column;gap:16px}
+.contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form input,.contact-form textarea{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:14px 18px;font-family:'Poppins',sans-serif;font-size:16px;color:#fff;transition:border-color .3s}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:#f68623}
+.contact-form textarea{min-height:140px;resize:vertical}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.4)}
+.btn-submit{background:#f68623;color:#fff;border:none;border-radius:50px;padding:16px 40px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .3s}
+.btn-submit:hover{background:#ff9a3c;transform:translateY(-2px);box-shadow:0 8px 25px rgba(246,134,35,.4)}
+
+/* MAP */
+.map-wrap{margin-top:30px;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.map-wrap iframe{display:block}
+
+/* FOOTER */
+.footer{background:#050505;padding:60px 0 30px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+.footer h3{font-size:18px;margin-bottom:15px;color:#f68623}
+.footer p,.footer a,.footer li{font-size:15px;color:rgba(255,255,255,.6);line-height:1.8}
+.footer a:hover{color:#f68623}
+.footer ul{list-style:none}
+.footer ul li a{display:block;padding:3px 0}
+.footer-bottom{text-align:center;margin-top:40px;padding-top:25px;border-top:1px solid rgba(255,255,255,.08);font-size:14px;color:rgba(255,255,255,.35)}
+.social-icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);color:#fff;transition:all .3s;margin-right:8px}
+.social-icon:hover{background:#f68623;transform:translateY(-3px)}
+.social-icon svg{fill:currentColor}
+
+/* KEYFRAMES */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* MOBILE */
+@media(max-width:900px){
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,10,.98);flex-direction:column;justify-content:center;align-items:center;gap:25px}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:20px}
+  .hamburger{display:flex}
+  .two-col,.split,.footer-grid{grid-template-columns:1fr}
+  .split-img{min-height:300px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .stats-row{grid-template-columns:1fr}
+  .image-row{grid-template-columns:1fr}
+  .hero-bg{background-attachment:scroll}
+  .section-accent .accent-bg{background-attachment:scroll}
+  section{padding:70px 0}
+  .split-content{padding:40px 30px}
+  .contact-form .form-row{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery img{height:160px}
+}
+</style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="header-logo">
-      <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo.png" alt="Friends of Huntington Station Latin Quarter">
-    </a>
-    <nav class="header-nav">
-      <a href="index.html" class="active">HOME</a>
-      <a href="about.html">ABOUT US</a>
-      <a href="events.html">EVENTS</a>
-      <a href="contact.html">CONTACT US</a>
-    </nav>
-    <div class="header-cta">
-      <a href="contact.html" class="btn">CONTACT US</a>
-    </div>
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nav-logo">
+    <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo.png" alt="Friends of Huntington Station Latin Quarter">
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#gallery">Photos</a>
+    <a href="#contact">Contact</a>
   </div>
-</header>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-<!-- HERO — FULL SCREEN -->
-<section class="hero" style="background-image: url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg');">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="script-label" style="color:#fff;">Who We Are</p>
+    <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo-Big-about.png" alt="HSLQ - It's Up To Us" class="logo-badge">
+    <p class="script-label">Who We Are</p>
     <h1>Friends of Huntington Station Latin Quarter</h1>
-    <p>Friends of Huntington Station Latin Quarter (HSLQ) is a not-for-profit civic organization.</p>
-    <a href="contact.html" class="btn btn-white">CONTACT US</a>
+    <p>A not-for-profit civic organization promoting community development, cultural preservation, and unity in Huntington Station.</p>
+    <a href="#about" class="btn btn-primary">Learn More</a>
   </div>
 </section>
 
-<!-- HSLQ LOGO BADGE + WHAT WE DO — FULL BLEED -->
-<section class="section-full white">
-  <div class="section-inner">
-    <div class="section-col" style="text-align:center;">
-      <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo-Big-about.png" alt="HSLQ - It's Up To Us" class="styled-img" style="margin:0 auto;">
+<!-- WHAT WE DO -->
+<section class="section-dark" id="about">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo-Big-about.png" alt="HSLQ - It's Up To Us" style="max-width:350px;margin:0 auto">
+      </div>
+      <div class="reveal-right">
+        <p class="script-label">What We Do</p>
+        <h2 class="section-title">HSLQ Promotes</h2>
+        <ul class="what-list">
+          <li>Community development</li>
+          <li>Neighborhood revitalization</li>
+          <li>Cultural preservation</li>
+          <li>Youth enrichment programs</li>
+          <li>Safe streets programs</li>
+          <li>Unity &amp; respect of neighbors</li>
+          <li>Education programs</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Join HSLQ</a>
+      </div>
     </div>
-    <div class="section-col">
-      <p class="script-label" style="color:#151515;">What We Do</p>
-      <h2 class="section-heading">HSLQ Promotes</h2>
-      <ul class="content-list">
-        <li>Community development</li>
-        <li>Neighborhood revitalization</li>
-        <li>Cultural preservation</li>
-        <li>Youth enrichment programs</li>
-        <li>Safe streets programs</li>
-        <li>Unity &amp; respect of neighbors</li>
-        <li>Education programs</li>
-      </ul>
-      <a href="contact.html" class="btn">JOIN HSLQ</a>
+  </div>
+</section>
+
+<!-- WHY HSLQ FORMED -->
+<section class="section-accent">
+  <div class="accent-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg')"></div>
+  <div class="accent-overlay"></div>
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label" style="color:#fff">Our Story</p>
+      <h2 class="section-title">Why HSLQ Formed</h2>
+      <p class="section-text" style="margin:0 auto 30px;color:rgba(255,255,255,.9);max-width:800px">In 2010, Xavier Palacios and Ed Perez founded HSLQ to develop civic pride and individual responsibility. As a lifelong resident and business owner in Huntington Station, Xavier had an intimate understanding of the community. He saw that it required social and economic guidance, as well as a sense of community cohesion and efficacy. The community did indeed have the potential to thrive civically and economically, but this potential was misdirected and untapped. HSLQ aims to develop a socially healthy community that boasts of pride and prosperity.</p>
+      <a href="#about-deep" class="btn btn-outline">More About Us</a>
     </div>
   </div>
 </section>
 
-<!-- 2025 ANNUAL TOY DRIVE — EDGE TO EDGE SPLIT -->
-<section class="split-section">
-  <div class="split-left" style="background: rgba(246,134,35,1);">
-    <h2 class="section-heading" style="color:#fff;">2025 Annual Toy Drive</h2>
-    <p class="body-text-white">Each year, Friends of Huntington Station Latin Quarter ask Friends and Members to nominate a special family in need of gifts for the holiday season. We collect information about each family member including age and gender to ensure that these gifts help wishes come true.</p>
-    <a href="events.html" class="btn btn-white">LEARN MORE</a>
-  </div>
-  <div class="split-right" style="background-image: url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/hslq+-+girl+with+present-1920w.jpg');"></div>
-</section>
-
-<!-- PAST EVENTS / FACEBOOK — FULL BLEED -->
-<section class="section-full white">
-  <div class="section-text-center">
-    <p class="script-label" style="color:#151515;">Past Events</p>
-    <h2 class="section-heading">Visit Our Facebook Page!</h2>
-    <p >Follow <a href="https://www.facebook.com/HSLQ1/" target="_blank">HSLQ on Facebook</a> to stay up to date with all our events and community news! From Huntington Unity Fun Day, Spring Clean Ups, Easter Basket Drives, Holiday Toy Drives and many other community fundraisers.</p>
-    <a href="https://www.facebook.com/HSLQ1/" class="btn" target="_blank">FOLLOW US ON FACEBOOK</a>
+<!-- STATS ROW -->
+<section class="section-darker">
+  <div class="container">
+    <div class="stats-row reveal">
+      <div><div class="stat-num">7,135+</div><div class="stat-label">Meals Served</div></div>
+      <div><div class="stat-num">16</div><div class="stat-label">Years of Toy Drives</div></div>
+      <div><div class="stat-num">180+</div><div class="stat-label">Children Helped Annually</div></div>
+    </div>
   </div>
 </section>
 
-<!-- IMAGE ROW — EDGE TO EDGE -->
+<!-- IMAGE ROW -->
 <div class="image-row">
   <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Meals-Served.jpg" alt="7,135 Meals Served">
   <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/free+dinner+pickup+-e-420w.jpg" alt="Drive-Up Family Meals">
 </div>
 
-<!-- WHY HSLQ FORMED — EDGE TO EDGE SPLIT -->
-<section class="split-section">
-  <div class="split-left" style="background-image: url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg'); background-size:cover; background-position:center; position:relative;">
-    <div style="position:absolute;inset:0;background:rgba(246,134,35,0.6);"></div>
-    <div style="position:relative;z-index:1;">
-      <h2 class="section-heading" style="color:#fff;">Why HSLQ Formed?</h2>
-      <p class="body-text-white">In 2010, Xavier Palacios and Ed Perez founded HSLQ to develop civic pride and individual responsibility. As a lifelong resident and business owner in Huntington Station, Xavier had an intimate understanding of the community. He saw that it required social and economic guidance, as well as a sense of community cohesion and efficacy. The community did indeed have the potential to thrive civically and economically, but this potential was misdirected and untapped. HSLQ aims to develop a socially healthy community that boasts of pride and prosperity.</p>
-      <a href="about.html" class="btn btn-white">MORE ABOUT US</a>
-    </div>
-  </div>
-  <div class="split-right split-right-img">
-    <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/About-Row-1920w.jpg" alt="HSLQ Community">
-  </div>
-</section>
-
-<!-- JOIN US / TOY DRIVE BENEFIT — FULL BLEED -->
-<section class="section-full white">
-  <div class="section-inner">
-    <div class="section-col" style="text-align:center;">
-      <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/74896545_152427009446690_5444127616141361152_n-1920w.jpg" alt="The Giving Tree Community Art Project" class="styled-img" style="margin:0 auto;">
-    </div>
-    <div class="section-col">
-      <p class="script-label" style="color:#151515;">Join Us!</p>
-      <h2 class="section-heading">Toy Drive Benefit</h2>
-      <p >The Paramount and Spotlight are teaming up with the not-for-profit civic organization HSLQ – Huntington Station Latin Quarter – to create a holiday exhibition of painted trees created by you – our local community. For a minimum <strong>$25 donation</strong> you will receive a wooden tree canvas and supplies to create artwork that will be on display at Spotlight for the entire month of December.</p>
+<!-- CHALLENGES -->
+<section class="section-dark" id="about-deep">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <p class="script-label">For the Youth</p>
+        <h2 class="section-title">HSLQ Challenges</h2>
+        <p class="section-text">The community faces a challenge in keeping education a top priority for the youth and the undereducated. The desire of young people to be educated is often lost to the lure of gang membership. And in the home, making education a priority in the family sometimes takes second place to financial needs. It is important for the community to have visible role models that demonstrate the significance of education and provide understanding of goal attainment for the youth of the community.</p>
+      </div>
+      <div class="reveal-right">
+        <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/About-new-5-20.jpg" alt="HSLQ Community" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- OUR NAME — FULL BLEED -->
-<section class="section-full light">
-  <div class="section-text-center">
-    <p class="script-label" style="color:#151515;">Our Name</p>
-    <h2 class="section-heading">Why Call it a "Latin Quarter"?</h2>
-    <p >Huntington Station is a diverse community with a vast array of valuable human experiences. The diversity of the community is one of its major assets. Our efforts are not meant to exclude any residents. We simply aim to repair a stigmatized reputation. It is our belief that if we revitalize the Latino segment of Huntington Station, then the community as a whole will benefit from a well-organized and educated Latino population.</p>
-    <a href="contact.html" class="btn">JOIN HSLQ</a>
+<!-- THE SOLUTION -->
+<section class="section-accent">
+  <div class="accent-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg')"></div>
+  <div class="accent-overlay"></div>
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label" style="color:#fff">The Solution</p>
+      <h2 class="section-title">Is Up To Us</h2>
+      <p class="section-text" style="margin:0 auto;color:rgba(255,255,255,.9);max-width:800px">HSLQ has created various events and programs to engage the community in civic pride, unity and the belief that its residents can make valuable contributions to the community at large. HSLQ is a movement from within the community with the belief that the solution to what ails Huntington Station "Is Up To Us."</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY MORALE -->
+<section class="section-dark">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Social-200px-1920w.jpg" alt="HSLQ Community" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+      </div>
+      <div class="reveal-right">
+        <p class="script-label">Community Morale</p>
+        <h2 class="section-title">Role Models</h2>
+        <p class="section-text">The overall community morale has taken a severe blow and the cultural differences have been negatively amplified. A solution to these stigmas lies in the efforts of community leaders and role models that can distinguish the perceived problems from true community issues. HSLQ has adopted the phrase "It's Up to Us" as the organization's members believe that empowering, protecting and preserving community values is a vital step in the revitalization of Huntington Station.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR NAME -->
+<section class="section-darker">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label">Our Name</p>
+      <h2 class="section-title">Why Call it a "Latin Quarter"?</h2>
+      <p class="section-text" style="margin:0 auto;max-width:800px">Huntington Station is a diverse community with a vast array of valuable human experiences. The diversity of the community is one of its major assets. Our efforts are not meant to exclude any residents. We simply aim to repair a stigmatized reputation. It is our belief that if we revitalize the Latino segment of Huntington Station, then the community as a whole will benefit from a well-organized and educated Latino population.</p>
+      <div style="margin-top:30px"><a href="#contact" class="btn btn-primary">Join HSLQ</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section-dark" id="events">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left" style="text-align:center">
+        <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/101480-Toy-Drive-Box-Poster-Prints_2025.jpg" alt="2025 Toy Drive" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4);max-width:400px;margin:0 auto">
+      </div>
+      <div class="reveal-right">
+        <p class="script-label">Holiday Event</p>
+        <h2 class="section-title">2025 Annual Toy Drive</h2>
+        <p class="section-text">In the spirit of the holidays, I am reaching out to see if you would be willing to adopt a family for our 16th Annual HSLQ Toy Drive. All of the children in our drive are living below the poverty line, where the parents have a combined income of less than $31,200 a year, usually supporting a family of four.</p>
+        <p class="section-text" style="margin-top:15px">If you are interested in becoming a donor, we kindly ask that you spend at least <strong style="color:#f68623">$75 on each child</strong> as your gifts may be the only ones received by these special children. As we already have over <strong style="color:#f68623">180 children</strong> on our list, kindly indicate how many children you would like to "adopt" and I will send you a wish list.</p>
+        <p class="section-text" style="margin-top:15px"><strong style="color:#fff">DROP OFF LOCATION:</strong><br>Palacios Law Group/HSLQ Headquarters<br>1399 New York Avenue, Huntington Station</p>
+        <p class="section-text" style="margin-top:15px">Happy Holidays!!<br><strong style="color:#fff">Laura Palacios</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOY DRIVE GIVING TREE -->
+<section class="section-darker">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <p class="script-label">Join Us!</p>
+        <h2 class="section-title">Toy Drive Benefit</h2>
+        <p class="section-text">The Paramount and Spotlight are teaming up with the not-for-profit civic organization HSLQ – Huntington Station Latin Quarter – to create a holiday exhibition of painted trees created by you – our local community. For a minimum <strong style="color:#f68623">$25 donation</strong> you will receive a wooden tree canvas and supplies to create artwork that will be on display at Spotlight for the entire month of December.</p>
+      </div>
+      <div class="reveal-right" style="text-align:center">
+        <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/74896545_152427009446690_5444127616141361152_n-1920w.jpg" alt="The Giving Tree Community Art Project" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANNUAL GIVING -->
+<section class="section-accent">
+  <div class="accent-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg')"></div>
+  <div class="accent-overlay"></div>
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label" style="color:#fff">Annual Toy Drive</p>
+      <h2 class="section-title">Giving Back to Our Community</h2>
+      <p class="section-text" style="margin:0 auto;color:rgba(255,255,255,.9);max-width:800px">Once Friends of HSLQ gathers information, a list is created which is distributed to Friends and members who in turn purchase gifts for these deserving families. Over the years, Friends of HSLQ has collected hundreds of gifts which have been donated to hundreds of families. Children received toys, books, board games, coats, clothing and most importantly love and thoughtfulness from many members of the Huntington Station community.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CLEANUP EVENT -->
+<section class="section-dark">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <h2 class="section-title">2025 Annual Neighborhood Cleanup</h2>
+      <p class="section-text" style="margin:0 auto;max-width:800px">Volunteers rolled up their sleeves and got to work at the 15th Annual Huntington Station Clean Up! Thanks to everyone's incredible effort, we cleared trash, refreshed green spaces, and made a real difference in our community.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="section-darker" id="gallery">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:10px" class="reveal">
+      <p class="script-label">Community In Action</p>
+      <h2 class="section-title">Event Photos</h2>
+    </div>
+    <div class="gallery reveal">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482959318_1113194847499898_2371757536970194119_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482959787_1113194784166571_7972587459492554689_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482978371_1113194507499932_4423639949342881241_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482984574_1113194540833262_8045199862401473254_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493225490_1100917418734758_3467401419929825534_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493228925_1100916692068164_8330851347163336169_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493263399_1100919815401185_6663422812150142220_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493274087_1100916198734880_1587607446549695778_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493920121_1100916802068153_8625676405787963515_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/494212575_1100918688734631_335050832351246795_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/484179205_1113194567499926_5136429837636341039_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/484348169_1113194840833232_5549505349843402734_n.jpg" alt="HSLQ Event">
+    </div>
+  </div>
+</section>
+
+<!-- FACEBOOK CTA -->
+<section class="section-dark">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label">Past Events</p>
+      <h2 class="section-title">Visit Our Facebook Page!</h2>
+      <p class="section-text" style="margin:0 auto 30px;max-width:700px">Follow <a href="https://www.facebook.com/HSLQ1/" target="_blank">HSLQ on Facebook</a> to stay up to date with all our events and community news! From Huntington Unity Fun Day, Spring Clean Ups, Easter Basket Drives, Holiday Toy Drives and many other community fundraisers.</p>
+      <a href="https://www.facebook.com/HSLQ1/" class="btn btn-primary" target="_blank">Follow Us on Facebook</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-darker" id="contact">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <p class="script-label">Interested in Joining?</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+          </div>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone">
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+      <div class="reveal-right">
+        <h2 class="section-title" style="font-size:28px">Contact Us</h2>
+        <p style="color:rgba(255,255,255,.75);margin-bottom:5px"><strong style="color:#fff">1399 New York Avenue,<br>Huntington Station, NY 11746</strong></p>
+        <p style="margin-bottom:25px"><a href="tel:631-673-1000" style="color:#f68623;font-size:20px;font-weight:600">631-673-1000</a></p>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.8!2d-73.4113!3d40.8407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8289d4e24b7f7%3A0x7d7e5b04a4f6a0e5!2s1399+New+York+Ave%2C+Huntington+Station%2C+NY+11746!5e0!3m2!1sen!2sus!4v1" width="100%" height="350" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-mission">
-      <h3>Our Mission</h3>
-      <p>Our mission is to provide a community of positive role models, pride in education, safety on our streets and unity between neighborhoods.</p>
-    </div>
-    <div class="footer-contact">
-      <h3>Contact Info</h3>
-      <p>1399 New York Avenue<br>Huntington Station, NY 11746</p>
-      <p><a href="tel:631-673-1000">631-673-1000</a></p>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/HSLQ1/" target="_blank" class="social-icon" aria-label="Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide a community of positive role models, pride in education, safety on our streets and unity between neighborhoods.</p>
+        <div style="margin-top:20px">
+          <a href="https://www.facebook.com/HSLQ1/" target="_blank" class="social-icon" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact Info</h3>
+        <p>1399 New York Avenue<br>Huntington Station, NY 11746</p>
+        <p><a href="tel:631-673-1000">631-673-1000</a></p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Photos</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Friends of Huntington Station Latin Quarter</p>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Friends of Huntington Station Latin Quarter</p>
   </div>
 </footer>
 
 <script>
-document.querySelector('.hamburger').addEventListener('click', function() {
-  this.classList.toggle('active');
-  document.querySelector('.header-nav').classList.toggle('open');
+// Navbar scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)});
+
+// Hamburger
+const hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navLinks.classList.toggle('open')});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('active');navLinks.classList.remove('open')}));
+
+// Scroll reveal
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.15,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>observer.observe(el));
+
+// Active nav link
+const sections=document.querySelectorAll('section[id]');
+const navAnchors=navLinks.querySelectorAll('a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-200)current=s.getAttribute('id')});
+  navAnchors.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+current)});
 });
 </script>
 
