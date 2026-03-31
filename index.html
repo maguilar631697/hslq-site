@@ -3,604 +3,555 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#080808">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0a0a0a">
 <link rel="icon" href="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/FAV-57px.png">
-<title>Friends of Huntington Station Latin Quarter — It's Up To Us</title>
-<meta name="description" content="Friends of Huntington Station Latin Quarter (HSLQ) is a not-for-profit civic organization promoting community development, cultural preservation, and youth enrichment in Huntington Station, NY.">
+<title>Friends of Huntington Station Latin Quarter — Community, Pride, Unity</title>
+<meta name="description" content="Friends of Huntington Station Latin Quarter (HSLQ) is a not-for-profit civic organization promoting community development, neighborhood revitalization, cultural preservation, and youth enrichment in Huntington Station, NY.">
+<meta name="keywords" content="HSLQ, Huntington Station, Latin Quarter, community, nonprofit, Long Island, youth programs, neighborhood revitalization">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Friends of Huntington Station Latin Quarter">
+<meta property="og:description" content="A not-for-profit civic organization promoting community development, cultural preservation, and youth enrichment in Huntington Station, NY.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hslq.org/">
+<meta property="og:site_name" content="Friends of Huntington Station Latin Quarter">
+<meta property="og:image" content="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Friends of Huntington Station Latin Quarter">
+<meta name="twitter:description" content="Community development, cultural preservation, and youth enrichment in Huntington Station, NY.">
+<meta name="twitter:image" content="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Friends of Huntington Station Latin Quarter",
+  "alternateName":"HSLQ",
+  "url":"https://hslq.org/",
+  "description":"A not-for-profit civic organization promoting community development, neighborhood revitalization, cultural preservation, and youth enrichment.",
+  "address":{"@type":"PostalAddress","streetAddress":"1399 New York Avenue","addressLocality":"Huntington Station","addressRegion":"NY","postalCode":"11746","addressCountry":"US"},
+  "telephone":"631-673-1000",
+  "sameAs":["https://www.facebook.com/HSLQ1/"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,900&family=Mrs+Saint+Delafield&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,900&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,900&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Work+Sans:wght@400;600;800&family=Satisfy&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --orange:#F68623;--orange-dark:#d4711a;--orange-glow:rgba(246,134,35,.25);
-  --black:#080808;--dark:#111;--dark2:#1a1a1a;
-  --gray-50:#f5f5f5;--gray-100:#eee;--gray-200:#ddd;--gray-400:#888;--gray-600:#555;
-  --white:#fff;
-  --sans:'Inter',system-ui,sans-serif;
-  --serif:'Playfair Display',Georgia,serif;
-  --script:'Mrs Saint Delafield',cursive;
-  --ease:cubic-bezier(.16,1,.3,1);
-}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);color:var(--black);background:var(--black);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-::selection{background:var(--orange);color:var(--white)}
-a{color:var(--orange);transition:color .2s}
-a:hover{color:var(--orange-dark)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Poppins',sans-serif;font-size:18px;color:#e0e0e0;line-height:1.8;background:#0a0a0a;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:#f68623;text-decoration:none;transition:color .3s}
+a:hover{color:#ffaa55}
+h1,h2,h3,h4{font-family:'Work Sans',sans-serif;font-weight:800;color:#fff;line-height:1.1}
+::selection{background:#f68623;color:#fff}
 
-/* ===== NAV — floating, mix-blend-mode ===== */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;mix-blend-mode:difference;transition:padding .3s}
-.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.nav-brand img{height:40px;filter:brightness(0) invert(1);opacity:.85}
-.nav-links{display:flex;gap:32px;align-items:center}
-.nav-links a{font-size:13px;font-weight:500;color:var(--white);text-decoration:none;letter-spacing:.15em;text-transform:uppercase;opacity:.6;transition:opacity .3s}
-.nav-links a:hover{opacity:1}
-.nav-links .nav-cta{opacity:1;border:1px solid var(--white);padding:8px 20px}
-.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;z-index:101}
-.hamburger span{display:block;width:24px;height:2px;background:var(--white);margin:5px 0;transition:all .3s}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,box-shadow .4s}
+.nav.scrolled{background:rgba(10,10,10,.95);box-shadow:0 2px 20px rgba(0,0,0,.5)}
+.nav-logo img{height:50px;transition:transform .3s}
+.nav-logo img:hover{transform:scale(1.05)}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{color:#fff;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;position:relative;padding:4px 0}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:#f68623;transition:width .3s}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a:hover{color:#f68623}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;transition:all .3s}
 .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-@media(max-width:768px){
-  .nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(8,8,8,.97);flex-direction:column;justify-content:center;gap:24px;opacity:0;pointer-events:none;transition:opacity .3s;mix-blend-mode:normal}
-  .nav-links.open{opacity:1;pointer-events:all}
-  .nav-links a{font-size:18px;opacity:.8}
-  .hamburger{display:block}
-}
 
-/* ===== HERO — full immersion ===== */
-.hero{position:relative;height:100vh;height:100dvh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--black);text-align:center}
-.hero-fluid{position:absolute;inset:0;z-index:0}
-.hero-fluid::before,.hero-fluid::after{content:'';position:absolute;border-radius:50%;filter:blur(120px);animation:fluid 12s ease-in-out infinite alternate}
-.hero-fluid::before{width:60vw;height:60vw;top:-20%;left:-10%;background:radial-gradient(circle,rgba(246,134,35,.3) 0%,rgba(246,134,35,.08) 40%,transparent 70%);animation-name:fluid1}
-.hero-fluid::after{width:50vw;height:50vw;bottom:-15%;right:-10%;background:radial-gradient(circle,rgba(200,100,20,.2) 0%,rgba(120,60,10,.06) 40%,transparent 70%);animation-name:fluid2;animation-delay:-4s}
-.fluid-mid{position:absolute;width:40vw;height:40vw;top:30%;left:40%;border-radius:50%;filter:blur(100px);background:radial-gradient(circle,rgba(246,134,35,.12) 0%,transparent 60%);animation:fluid3 16s ease-in-out infinite alternate}
-@keyframes fluid1{0%{transform:translate(0,0) scale(1) rotate(0deg)}50%{transform:translate(10vw,8vh) scale(1.2) rotate(20deg)}100%{transform:translate(-5vw,12vh) scale(.9) rotate(-10deg)}}
-@keyframes fluid2{0%{transform:translate(0,0) scale(1) rotate(0deg)}50%{transform:translate(-12vw,-6vh) scale(1.15) rotate(-15deg)}100%{transform:translate(8vw,-10vh) scale(.85) rotate(25deg)}}
-@keyframes fluid3{0%{transform:translate(0,0) scale(1)}33%{transform:translate(-8vw,5vh) scale(1.3)}66%{transform:translate(6vw,-8vh) scale(.8)}100%{transform:translate(-3vw,3vh) scale(1.1)}}
+/* HERO — SPLIT + AURORA + MARQUEE */
+.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.hero-left{position:relative;display:flex;flex-direction:column;justify-content:center;padding:80px 60px 80px 60px;z-index:2}
+.hero-left::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#0a0a0a 0%,#1a0d00 40%,#2d1200 70%,#0a0a0a 100%);background-size:400% 400%;animation:auroraShift 12s ease infinite;z-index:-1}
+.hero-left .logo-badge{width:100px;margin-bottom:30px;opacity:0;animation:fadeUp .8s .1s forwards}
+.hero-left .script-label{font-family:'Satisfy',cursive;font-size:clamp(28px,4vw,44px);color:#f68623;margin-bottom:10px;opacity:0;animation:fadeUp .8s .3s forwards}
+.hero-left h1{font-size:clamp(30px,4vw,52px);margin-bottom:20px;opacity:0;animation:fadeUp .8s .5s forwards;line-height:1.05}
+.hero-left p{font-size:clamp(15px,1.5vw,19px);color:rgba(255,255,255,.75);margin-bottom:35px;max-width:500px;opacity:0;animation:fadeUp .8s .7s forwards}
+.hero-right{position:relative;overflow:hidden}
+.hero-right img{width:100%;height:100%;object-fit:cover;animation:kenBurns 20s ease infinite alternate}
+.hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(270deg,transparent 60%,#0a0a0a 100%)}
 
-/* Particles */
-.particles{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}
-.particle{position:absolute;border-radius:50%;opacity:0;animation:drift linear infinite}
-.particle:nth-child(1){width:6px;height:6px;background:rgba(246,134,35,.5);left:10%;top:80%;animation-duration:14s;animation-delay:0s}
-.particle:nth-child(2){width:4px;height:4px;background:rgba(246,134,35,.35);left:25%;top:90%;animation-duration:18s;animation-delay:-3s}
-.particle:nth-child(3){width:8px;height:8px;background:rgba(246,134,35,.4);left:40%;top:85%;animation-duration:12s;animation-delay:-6s}
-.particle:nth-child(4){width:3px;height:3px;background:rgba(255,255,255,.15);left:55%;top:95%;animation-duration:20s;animation-delay:-2s}
-.particle:nth-child(5){width:5px;height:5px;background:rgba(246,134,35,.3);left:70%;top:88%;animation-duration:16s;animation-delay:-8s}
-.particle:nth-child(6){width:10px;height:10px;background:rgba(246,134,35,.2);left:85%;top:82%;animation-duration:22s;animation-delay:-5s}
-.particle:nth-child(7){width:4px;height:4px;background:rgba(255,255,255,.1);left:15%;top:92%;animation-duration:15s;animation-delay:-10s}
-.particle:nth-child(8){width:7px;height:7px;background:rgba(246,134,35,.25);left:60%;top:78%;animation-duration:19s;animation-delay:-7s}
-.particle:nth-child(9){width:3px;height:3px;background:rgba(246,134,35,.45);left:35%;top:96%;animation-duration:13s;animation-delay:-1s}
-.particle:nth-child(10){width:5px;height:5px;background:rgba(255,255,255,.08);left:80%;top:90%;animation-duration:17s;animation-delay:-4s}
-@keyframes drift{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}10%{opacity:1}50%{transform:translateY(-45vh) translateX(20px) scale(1.2);opacity:.7}90%{opacity:.3}100%{transform:translateY(-100vh) translateX(-10px) scale(.8);opacity:0}}
+/* MARQUEE */
+.marquee-wrap{position:relative;overflow:hidden;background:#050505;padding:18px 0;border-top:1px solid rgba(246,134,35,.15);border-bottom:1px solid rgba(246,134,35,.15)}
+.marquee-track{display:flex;width:max-content;animation:marqueeScroll 25s linear infinite}
+.marquee-track span{font-family:'Work Sans',sans-serif;font-weight:800;font-size:clamp(18px,2.5vw,28px);text-transform:uppercase;letter-spacing:3px;white-space:nowrap;padding:0 40px;color:rgba(255,255,255,.12)}
+.marquee-track span.accent{color:#f68623;opacity:.5}
 
-.hero-content{position:relative;z-index:2;padding:0 32px;max-width:900px}
-.hero-logo{margin-bottom:24px}
-.hero-logo img{height:90px;max-width:80vw;object-fit:contain;filter:brightness(0) invert(1);opacity:.85}
-.hero-title{font-family:var(--serif);font-size:clamp(3.5rem,12vw,10rem);font-weight:900;line-height:.82;letter-spacing:-.04em;color:var(--white);text-transform:uppercase;margin-bottom:16px}
-.hero-title em{display:block;color:var(--orange);font-style:italic;text-transform:none;font-size:.45em;letter-spacing:-.01em;line-height:1.3;margin-top:.15em}
-.hero-sub{font-size:clamp(1rem,2vw,1.3rem);color:rgba(255,255,255,.45);max-width:520px;margin:0 auto 32px;font-weight:300;letter-spacing:.02em;line-height:1.7}
-.hero-btn{display:inline-block;background:var(--orange);color:var(--white);font-size:15px;font-weight:700;padding:14px 40px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;transition:all .3s var(--ease)}
-.hero-btn:hover{background:var(--white);color:var(--black)}
-.hero-scroll{position:absolute;right:32px;bottom:48px;z-index:2;writing-mode:vertical-rl;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);display:flex;align-items:center;gap:12px}
-.hero-scroll::after{content:'';display:block;width:1px;height:48px;background:rgba(255,255,255,.2);animation:scrollLine 2s ease-in-out infinite}
-@keyframes scrollLine{0%,100%{transform:scaleY(1);opacity:.3}50%{transform:scaleY(.4);opacity:.8}}
+@keyframes auroraShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes kenBurns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.1) translate(-2%,-2%)}}
 
-/* ===== MARQUEE ===== */
-.marquee{overflow:hidden;background:var(--orange);padding:14px 0;white-space:nowrap}
-.marquee-track{display:flex;gap:0;animation:marquee 25s linear infinite;width:max-content}
-.marquee-text{font-family:var(--serif);font-size:18px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:.3em;padding:0 48px}
-@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* BUTTONS */
+.btn{display:inline-block;padding:14px 36px;border-radius:50px;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:all .3s;cursor:pointer;border:none}
+.btn-primary{background:#f68623;color:#fff}
+.btn-primary:hover{background:#ff9a3c;transform:translateY(-2px);box-shadow:0 8px 25px rgba(246,134,35,.4);color:#fff}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
+.btn-outline:hover{background:#fff;color:#0a0a0a;transform:translateY(-2px)}
 
-/* ===== EDITORIAL SECTIONS ===== */
-.editorial{padding:0;background:var(--white)}
-.ed-row{display:grid;grid-template-columns:1fr 1fr;min-height:80vh;border-bottom:1px solid var(--gray-200)}
-.ed-row.reverse{direction:rtl}.ed-row.reverse>*{direction:ltr}
-.ed-media{position:relative;overflow:hidden}
-.ed-media img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
-.ed-media:hover img{transform:scale(1.04)}
-.ed-text{display:flex;flex-direction:column;justify-content:center;padding:64px 56px}
-.ed-eyebrow{font-size:13px;font-weight:600;letter-spacing:.35em;text-transform:uppercase;color:var(--orange);margin-bottom:16px}
-.ed-heading{font-family:var(--serif);font-size:clamp(2rem,4vw,3.5rem);font-weight:800;line-height:1;letter-spacing:-.02em;margin-bottom:20px}
-.ed-body{font-size:15px;color:var(--gray-600);line-height:1.8;font-weight:300;max-width:480px}
-.ed-body strong{color:var(--black);font-weight:600}
-.ed-list{list-style:none;padding:0;margin:20px 0}
-.ed-list li{font-size:15px;color:var(--gray-600);line-height:1.8;font-weight:300;padding:6px 0;border-bottom:1px solid var(--gray-100);display:flex;align-items:center;gap:10px}
-.ed-list li::before{content:'';width:8px;height:8px;background:var(--orange);border-radius:50%;flex-shrink:0}
+/* SECTIONS */
+section{padding:100px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 30px}
+.script-label{font-family:'Satisfy',cursive;font-size:clamp(24px,3vw,38px);color:#f68623;margin-bottom:8px;line-height:1}
+.section-title{font-size:clamp(28px,4vw,48px);margin-bottom:25px}
+.section-text{font-size:17px;color:rgba(255,255,255,.75);line-height:1.9;max-width:700px}
 
-/* ===== STORY SECTION ===== */
-.story-section{background:var(--white);display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
-.story-image{position:relative;overflow:hidden}
-.story-image img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 6s ease}
-.story-image:hover img{transform:scale(1.03)}
-.story-text{display:flex;flex-direction:column;justify-content:center;padding:80px 56px}
-.story-heading{font-family:var(--serif);font-size:clamp(3rem,7vw,5rem);font-weight:900;line-height:.88;letter-spacing:-.03em;margin-bottom:40px}
-.story-body{margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--gray-200)}
-.story-body:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
-.story-body p{font-size:17px;color:var(--gray-600);line-height:1.8;font-weight:300;margin-bottom:8px}
-.story-body p:last-child{margin-bottom:0}
-.story-body strong{color:var(--black);font-weight:600}
-
-/* ===== IMPACT STATS ===== */
-.impact-section{background:var(--black);color:var(--white);padding:100px 32px;display:flex;flex-direction:column;justify-content:center}
-.impact-header{margin-bottom:64px;max-width:700px}
-.impact-header h2{font-family:var(--serif);font-size:clamp(3rem,8vw,6rem);font-weight:900;line-height:.85;letter-spacing:-.04em;color:var(--white)}
-.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(255,255,255,.06)}
-.imp-card{padding:48px 32px;border-right:1px solid rgba(255,255,255,.06);transition:background .3s}
-.imp-card:last-child{border-right:none}
-.imp-card:hover{background:rgba(246,134,35,.04)}
-.imp-num{font-family:var(--serif);font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--orange);line-height:1;margin-bottom:16px}
-.imp-card h4{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
-.imp-card p{font-size:16px;color:rgba(255,255,255,.3);line-height:1.7;font-weight:300}
-
-/* ===== FULL-BLEED DARK SECTION ===== */
-.dark-section{background:var(--black);color:var(--white);padding:100px 32px;display:flex;align-items:center;min-height:60vh}
-.dark-section .section-inner{max-width:800px}
-.dark-section .ed-heading{color:var(--white)}
-.dark-section .ed-body{color:rgba(255,255,255,.5)}
-
-/* ===== CTA SECTION ===== */
-.cta-section{background:var(--orange);min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 32px;text-align:center}
-.cta-section h2{font-family:var(--serif);font-size:clamp(3rem,10vw,8rem);font-weight:900;color:var(--white);line-height:.85;letter-spacing:-.04em;margin-bottom:20px}
-.cta-section p{color:rgba(255,255,255,.7);font-size:20px;font-weight:300;max-width:500px;margin:0 auto 36px;line-height:1.7}
-.cta-btn{display:inline-block;background:var(--white);color:var(--black);font-size:18px;font-weight:700;padding:16px 48px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;transition:all .3s var(--ease)}
-.cta-btn:hover{background:var(--black);color:var(--white)}
-
-/* ===== GALLERY ===== */
-.gallery-section{background:var(--white);padding:80px 0}
-.gallery-header{padding:0 32px 48px;max-width:700px}
-.gallery-header h2{font-family:var(--serif);font-size:clamp(3rem,8vw,6rem);font-weight:900;line-height:.85;letter-spacing:-.04em}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:0 4px}
-.gallery-grid img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .4s var(--ease);cursor:pointer}
-.gallery-grid img:hover{transform:scale(1.03)}
-
-/* ===== IMAGE ROW ===== */
-.image-row{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.image-row img{width:100%;height:100%;object-fit:cover;min-height:300px}
-
-/* ===== CONTACT SECTION ===== */
-.contact-section{background:var(--gray-50);display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
-.contact-form-wrap{padding:80px 56px;display:flex;flex-direction:column;justify-content:center}
-.contact-info-wrap{padding:80px 56px;display:flex;flex-direction:column;justify-content:center;background:var(--white);border-left:1px solid var(--gray-200)}
-.contact-form{display:flex;flex-direction:column;gap:16px;max-width:480px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.contact-form input,.contact-form textarea{font-family:var(--sans);font-size:15px;padding:16px 20px;border:1px solid var(--gray-200);background:var(--white);transition:border-color .2s;outline:none;width:100%}
-.contact-form input:focus,.contact-form textarea:focus{border-color:var(--orange)}
-.contact-form textarea{min-height:140px;resize:vertical}
-.btn-submit{font-family:var(--sans);background:var(--orange);color:var(--white);font-size:15px;font-weight:700;padding:16px 40px;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:.12em;transition:all .3s var(--ease)}
-.btn-submit:hover{background:var(--black)}
-.contact-info-wrap h3{font-family:var(--serif);font-size:2rem;font-weight:800;margin-bottom:20px}
-.contact-info-wrap p{font-size:16px;color:var(--gray-600);line-height:1.8;margin-bottom:12px}
-.contact-info-wrap a{color:var(--orange);text-decoration:none}
-.map-embed{margin-top:24px;border-radius:0}
-.map-embed iframe{width:100%;height:280px;border:0}
-
-/* ===== FOOTER ===== */
-footer{background:var(--black);color:rgba(255,255,255,.4);padding:100px 32px 60px;border-top:1px solid rgba(255,255,255,.06)}
-footer a{color:var(--orange);text-decoration:none;transition:color .2s}
-footer a:hover{color:var(--white)}
-.footer-inner{max-width:1400px;margin:0 auto}
-.footer-top{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:64px}
-.footer-brand{font-family:var(--serif);font-size:clamp(2rem,4vw,3.5rem);font-weight:900;color:var(--white);line-height:.9;letter-spacing:-.02em;margin-bottom:20px}
-.footer-desc{font-size:17px;line-height:1.8;max-width:480px}
-.footer-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.footer-nav a{display:block;font-size:16px;font-weight:500;color:rgba(255,255,255,.4);padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:all .2s;text-decoration:none}
-.footer-nav a:hover{color:var(--white);padding-left:8px}
-.footer-logo{margin-bottom:48px}
-.footer-logo img{height:48px;filter:brightness(0) invert(1);opacity:.4;transition:opacity .3s}
-.footer-logo img:hover{opacity:.7}
-.footer-bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;padding-top:32px;border-top:1px solid rgba(255,255,255,.06);font-size:14px}
-.footer-mission-text{max-width:600px;line-height:1.8;opacity:.6}
-.social-link{display:inline-flex;align-items:center;gap:8px;color:var(--orange);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;margin-top:16px}
-.social-link:hover{color:var(--white)}
-
-/* ===== SCROLL REVEAL ===== */
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+/* REVEAL ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
 .reveal.visible{opacity:1;transform:translateY(0)}
-.reveal-d1{transition-delay:.1s}
-.reveal-d2{transition-delay:.2s}
+.reveal-left{opacity:0;transform:translateX(-60px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(60px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
 
-/* ===== RESPONSIVE ===== */
-@media(max-width:768px){
-  .nav{padding:14px 20px}
-  .hero{text-align:center}
-  .hero-content{padding:0 20px}
-  .hero-title{font-size:clamp(3rem,14vw,5rem)}
-  .hero-sub{font-size:1rem}
-  .hero-scroll{display:none}
-  .hero-fluid::before{width:80vw;height:80vw;filter:blur(60px)!important}
-  .hero-fluid::after{width:60vw;height:60vw;filter:blur(60px)!important}
-  .fluid-mid{width:50vw;height:50vw;filter:blur(40px)!important}
-  .particle:nth-child(n+7){display:none}
-  .marquee{padding:10px 0}
-  .marquee-text{font-size:14px;padding:0 24px}
-  .ed-row{grid-template-columns:1fr;min-height:auto}
-  .ed-media{min-height:50vh}
-  .ed-row.reverse{direction:ltr}
-  .ed-text{padding:40px 20px}
-  .story-section{grid-template-columns:1fr;min-height:auto}
-  .story-image{min-height:50vh;max-height:60vh}
-  .story-text{padding:40px 20px}
-  .story-heading{font-size:clamp(2.5rem,10vw,4rem);margin-bottom:28px}
-  .story-body p{font-size:16px}
-  .impact-section{padding:60px 20px}
-  .impact-header h2{font-size:clamp(2.5rem,10vw,4rem)}
-  .impact-grid{grid-template-columns:1fr}
-  .imp-card{border-right:none;border-bottom:1px solid rgba(255,255,255,.06);padding:36px 20px}
-  .dark-section{padding:60px 20px;min-height:auto}
-  .cta-section{min-height:auto;padding:60px 20px}
-  .cta-section h2{font-size:clamp(3rem,12vw,5rem)}
-  .cta-btn{font-size:15px;padding:14px 36px}
-  .gallery-header{padding:0 20px 32px}
-  .gallery-header h2{font-size:clamp(2.5rem,10vw,4rem)}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
-  .gallery-section{padding:48px 0}
+/* TWO COL */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.two-col img{border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+
+/* DARK / LIGHT SECTIONS */
+.section-dark{background:#0a0a0a}
+.section-darker{background:#050505}
+.section-accent{position:relative;overflow:hidden}
+.section-accent .accent-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-attachment:fixed}
+.section-accent .accent-overlay{position:absolute;inset:0;background:rgba(246,134,35,.85)}
+.section-accent .container{position:relative;z-index:2}
+
+/* WHAT WE DO LIST */
+.what-list{list-style:none;padding:0;margin:20px 0 30px}
+.what-list li{padding:10px 0;padding-left:30px;position:relative;font-size:17px;color:rgba(255,255,255,.8)}
+.what-list li::before{content:'';position:absolute;left:0;top:18px;width:12px;height:12px;border-radius:50%;background:#f68623}
+
+/* SPLIT SECTION */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
+.split-content{display:flex;flex-direction:column;justify-content:center;padding:60px 50px}
+.split-img{background-size:cover;background-position:center;min-height:400px}
+
+/* IMAGE ROW */
+.image-row{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.image-row img{width:100%;height:300px;object-fit:cover}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center;margin-top:60px}
+.stat-num{font-family:'Work Sans',sans-serif;font-size:clamp(36px,5vw,56px);font-weight:800;color:#f68623}
+.stat-label{font-size:15px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:40px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px;transition:transform .4s,box-shadow .4s;cursor:pointer}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 12px 40px rgba(246,134,35,.3)}
+
+/* CONTACT FORM */
+.contact-form{display:flex;flex-direction:column;gap:16px}
+.contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form input,.contact-form textarea{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:14px 18px;font-family:'Poppins',sans-serif;font-size:16px;color:#fff;transition:border-color .3s}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:#f68623}
+.contact-form textarea{min-height:140px;resize:vertical}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.4)}
+.btn-submit{background:#f68623;color:#fff;border:none;border-radius:50px;padding:16px 40px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .3s}
+.btn-submit:hover{background:#ff9a3c;transform:translateY(-2px);box-shadow:0 8px 25px rgba(246,134,35,.4)}
+
+/* MAP */
+.map-wrap{margin-top:30px;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.map-wrap iframe{display:block}
+
+/* FOOTER */
+.footer{background:#050505;padding:60px 0 30px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+.footer h3{font-size:18px;margin-bottom:15px;color:#f68623}
+.footer p,.footer a,.footer li{font-size:15px;color:rgba(255,255,255,.6);line-height:1.8}
+.footer a:hover{color:#f68623}
+.footer ul{list-style:none}
+.footer ul li a{display:block;padding:3px 0}
+.footer-bottom{text-align:center;margin-top:40px;padding-top:25px;border-top:1px solid rgba(255,255,255,.08);font-size:14px;color:rgba(255,255,255,.35)}
+.social-icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);color:#fff;transition:all .3s;margin-right:8px}
+.social-icon:hover{background:#f68623;transform:translateY(-3px)}
+.social-icon svg{fill:currentColor}
+
+/* KEYFRAMES */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* MOBILE */
+@media(max-width:900px){
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,10,.98);flex-direction:column;justify-content:center;align-items:center;gap:25px}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:20px}
+  .hamburger{display:flex}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{padding:120px 30px 60px;text-align:center}
+  .hero-left p{margin-left:auto;margin-right:auto}
+  .hero-right{height:50vh}
+  .hero-right::after{background:linear-gradient(180deg,#0a0a0a 0%,transparent 30%,transparent 70%,#0a0a0a 100%)}
+  .two-col,.split,.footer-grid{grid-template-columns:1fr}
+  .split-img{min-height:300px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .stats-row{grid-template-columns:1fr}
   .image-row{grid-template-columns:1fr}
-  .image-row img{min-height:200px}
-  .contact-section{grid-template-columns:1fr}
-  .contact-form-wrap{padding:40px 20px}
-  .contact-info-wrap{padding:40px 20px;border-left:none;border-top:1px solid var(--gray-200)}
-  .form-row{grid-template-columns:1fr}
-  .footer-top{grid-template-columns:1fr;gap:32px}
-  .footer-nav{grid-template-columns:1fr;gap:0}
-  .footer-bottom{flex-direction:column}
-  footer{padding:60px 20px 40px}
+  .hero-bg{background-attachment:scroll}
+  .section-accent .accent-bg{background-attachment:scroll}
+  section{padding:70px 0}
+  .split-content{padding:40px 30px}
+  .contact-form .form-row{grid-template-columns:1fr}
 }
-
-/* Content-visibility for below-fold sections */
-.editorial,.story-section,.impact-section,.gallery-section,.contact-section,.cta-section,footer{content-visibility:auto;contain-intrinsic-size:auto 100vh}
+@media(max-width:480px){
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery img{height:160px}
+}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav class="nav">
-  <a href="#" class="nav-brand">
-    <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo.png" alt="HSLQ">
+<nav class="nav" id="nav">
+  <a href="#home" class="nav-logo">
+    <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo.png" alt="Friends of Huntington Station Latin Quarter">
   </a>
-  <div class="nav-links" id="nav-links">
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#events">Events</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact" class="nav-cta">Contact Us</a>
+    <a href="#gallery">Photos</a>
+    <a href="#contact">Contact</a>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-fluid"><div class="fluid-mid"></div></div>
-  <div class="particles">
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div>
+<!-- HERO — SPLIT -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo-Big-about.png" alt="HSLQ - It's Up To Us" class="logo-badge">
+    <p class="script-label">Who We Are</p>
+    <h1>Friends of<br>Huntington Station<br>Latin Quarter</h1>
+    <p>A not-for-profit civic organization promoting community development, cultural preservation, and unity in Huntington Station.</p>
+    <div style="opacity:0;animation:fadeUp .8s .9s forwards">
+      <a href="#about" class="btn btn-primary">Learn More</a>
+      <a href="#contact" class="btn btn-outline" style="margin-left:12px">Join Us</a>
+    </div>
   </div>
-  <div class="hero-content">
-    <div class="hero-logo"><img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo.png" alt="Friends of Huntington Station Latin Quarter"></div>
-    <div class="hero-title">HSLQ<em>It's Up To Us</em></div>
-    <p class="hero-sub">Friends of Huntington Station Latin Quarter is a not-for-profit civic organization promoting community development, cultural preservation, and youth enrichment.</p>
-    <a href="#contact" class="hero-btn">Join HSLQ</a>
+  <div class="hero-right">
+    <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Header-2-1920w.jpg" alt="Huntington Station Community">
   </div>
-  <div class="hero-scroll">Scroll<span></span></div>
 </section>
 
 <!-- MARQUEE -->
-<div class="marquee">
+<div class="marquee-wrap">
   <div class="marquee-track">
-    <span class="marquee-text">Community Development</span>
-    <span class="marquee-text">Cultural Preservation</span>
-    <span class="marquee-text">Youth Enrichment</span>
-    <span class="marquee-text">It's Up To Us</span>
-    <span class="marquee-text">Community Development</span>
-    <span class="marquee-text">Cultural Preservation</span>
-    <span class="marquee-text">Youth Enrichment</span>
-    <span class="marquee-text">It's Up To Us</span>
+    <span>Community Development</span><span class="accent">★</span>
+    <span>Cultural Preservation</span><span class="accent">★</span>
+    <span>Youth Enrichment</span><span class="accent">★</span>
+    <span>Safe Streets</span><span class="accent">★</span>
+    <span>Unity &amp; Respect</span><span class="accent">★</span>
+    <span>Education Programs</span><span class="accent">★</span>
+    <span>Neighborhood Revitalization</span><span class="accent">★</span>
+    <span>It's Up To Us</span><span class="accent">★</span>
+    <span>Community Development</span><span class="accent">★</span>
+    <span>Cultural Preservation</span><span class="accent">★</span>
+    <span>Youth Enrichment</span><span class="accent">★</span>
+    <span>Safe Streets</span><span class="accent">★</span>
+    <span>Unity &amp; Respect</span><span class="accent">★</span>
+    <span>Education Programs</span><span class="accent">★</span>
+    <span>Neighborhood Revitalization</span><span class="accent">★</span>
+    <span>It's Up To Us</span><span class="accent">★</span>
   </div>
 </div>
 
-<!-- WHAT WE DO — editorial row -->
-<section class="editorial" id="about">
-  <div class="ed-row">
-    <div class="ed-media reveal">
-      <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo-Big-about.png" alt="HSLQ - It's Up To Us" loading="lazy" style="object-fit:contain;background:var(--gray-50)">
-    </div>
-    <div class="ed-text">
-      <div class="ed-eyebrow reveal">What We Do</div>
-      <h2 class="ed-heading reveal">HSLQ Promotes</h2>
-      <ul class="ed-list reveal reveal-d1">
-        <li>Community development</li>
-        <li>Neighborhood revitalization</li>
-        <li>Cultural preservation</li>
-        <li>Youth enrichment programs</li>
-        <li>Safe streets programs</li>
-        <li>Unity &amp; respect of neighbors</li>
-        <li>Education programs</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ORIGIN STORY -->
-<section class="story-section" id="story">
-  <div class="story-image reveal">
-    <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/About-Row-1920w.jpg" alt="HSLQ Community" loading="lazy">
-  </div>
-  <div class="story-text">
-    <div class="ed-eyebrow">Our Story</div>
-    <div class="story-heading reveal">Why HSLQ<br>Formed.</div>
-    <div class="story-body reveal">
-      <p>In 2010, <strong>Xavier Palacios</strong> and <strong>Ed Perez</strong> founded HSLQ to develop civic pride and individual responsibility. As a lifelong resident and business owner in Huntington Station, Xavier had an intimate understanding of the community.</p>
-      <p>He saw that it required social and economic guidance, as well as a sense of community cohesion and efficacy. The community did indeed have the potential to thrive civically and economically, but this potential was misdirected and untapped. <strong>HSLQ aims to develop a socially healthy community that boasts of pride and prosperity.</strong></p>
+<!-- WHAT WE DO -->
+<section class="section-dark" id="about">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo-Big-about.png" alt="HSLQ - It's Up To Us" style="max-width:350px;margin:0 auto">
+      </div>
+      <div class="reveal-right">
+        <p class="script-label">What We Do</p>
+        <h2 class="section-title">HSLQ Promotes</h2>
+        <ul class="what-list">
+          <li>Community development</li>
+          <li>Neighborhood revitalization</li>
+          <li>Cultural preservation</li>
+          <li>Youth enrichment programs</li>
+          <li>Safe streets programs</li>
+          <li>Unity &amp; respect of neighbors</li>
+          <li>Education programs</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Join HSLQ</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- IMPACT STATS -->
-<section class="impact-section">
-  <div class="impact-header">
-    <div class="ed-eyebrow">Our Impact</div>
-    <h2 class="reveal">By the<br>Numbers.</h2>
-  </div>
-  <div class="impact-grid">
-    <div class="imp-card reveal">
-      <div class="imp-num">16</div>
-      <h4>Years of Toy Drives</h4>
-      <p>Bringing holiday joy to families in need across Huntington Station since 2009.</p>
-    </div>
-    <div class="imp-card reveal reveal-d1">
-      <div class="imp-num">180+</div>
-      <h4>Children Served</h4>
-      <p>Each year, over 180 children receive gifts through generous community donors.</p>
-    </div>
-    <div class="imp-card reveal reveal-d2">
-      <div class="imp-num">7,135</div>
-      <h4>Meals Served</h4>
-      <p>Providing hot meals and food security for families throughout the community.</p>
+<!-- WHY HSLQ FORMED -->
+<section class="section-accent">
+  <div class="accent-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg')"></div>
+  <div class="accent-overlay"></div>
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label" style="color:#fff">Our Story</p>
+      <h2 class="section-title">Why HSLQ Formed</h2>
+      <p class="section-text" style="margin:0 auto 30px;color:rgba(255,255,255,.9);max-width:800px">In 2010, Xavier Palacios and Ed Perez founded HSLQ to develop civic pride and individual responsibility. As a lifelong resident and business owner in Huntington Station, Xavier had an intimate understanding of the community. He saw that it required social and economic guidance, as well as a sense of community cohesion and efficacy. The community did indeed have the potential to thrive civically and economically, but this potential was misdirected and untapped. HSLQ aims to develop a socially healthy community that boasts of pride and prosperity.</p>
+      <a href="#about-deep" class="btn btn-outline">More About Us</a>
     </div>
   </div>
 </section>
 
-<!-- TOY DRIVE — editorial row -->
-<section class="editorial" id="events">
-  <div class="ed-row reverse">
-    <div class="ed-media reveal">
-      <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/hslq+-+girl+with+present-1920w.jpg" alt="HSLQ Toy Drive" loading="lazy">
-    </div>
-    <div class="ed-text">
-      <div class="ed-eyebrow reveal">Holiday Event</div>
-      <h2 class="ed-heading reveal">Annual Toy Drive</h2>
-      <p class="ed-body reveal">In the spirit of the holidays, we reach out to see if you would be willing to adopt a family for our <strong>16th Annual HSLQ Toy Drive</strong>. All of the children in our drive are living below the poverty line, where the parents have a combined income of less than $31,200 a year, usually supporting a family of four.</p>
-      <p class="ed-body reveal reveal-d1" style="margin-top:16px">If you are interested in becoming a donor, we kindly ask that you spend at least <strong>$75 on each child</strong> as your gifts may be the only ones received by these special children.</p>
+<!-- STATS ROW -->
+<section class="section-darker">
+  <div class="container">
+    <div class="stats-row reveal">
+      <div><div class="stat-num">7,135+</div><div class="stat-label">Meals Served</div></div>
+      <div><div class="stat-num">16</div><div class="stat-label">Years of Toy Drives</div></div>
+      <div><div class="stat-num">180+</div><div class="stat-label">Children Helped Annually</div></div>
     </div>
   </div>
 </section>
 
-<!-- IMAGE ROW — meals & community -->
+<!-- IMAGE ROW -->
 <div class="image-row">
-  <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Meals-Served.jpg" alt="7,135 Meals Served" loading="lazy">
-  <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/free+dinner+pickup+-e-420w.jpg" alt="Drive-Up Family Meals" loading="lazy">
+  <img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Meals-Served.jpg" alt="7,135 Meals Served">
+  <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/free+dinner+pickup+-e-420w.jpg" alt="Drive-Up Family Meals">
 </div>
 
-<!-- CHALLENGES & SOLUTION — dark section -->
-<section class="dark-section">
-  <div class="section-inner">
-    <div class="ed-eyebrow reveal">For the Youth</div>
-    <h2 class="ed-heading reveal" style="color:var(--white)">HSLQ Challenges</h2>
-    <p class="ed-body reveal" style="color:rgba(255,255,255,.5);max-width:700px">The community faces a challenge in keeping education a top priority for the youth and the undereducated. The desire of young people to be educated is often lost to the lure of gang membership. It is important for the community to have visible role models that demonstrate the significance of education and provide understanding of goal attainment for the youth of the community.</p>
-  </div>
-</section>
-
-<!-- COMMUNITY MORALE — editorial row -->
-<section class="editorial">
-  <div class="ed-row">
-    <div class="ed-media reveal">
-      <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Social-200px-1920w.jpg" alt="HSLQ Community" loading="lazy">
-    </div>
-    <div class="ed-text">
-      <div class="ed-eyebrow reveal">Community Morale</div>
-      <h2 class="ed-heading reveal">Role Models</h2>
-      <p class="ed-body reveal">The overall community morale has taken a severe blow and the cultural differences have been negatively amplified. A solution to these stigmas lies in the efforts of community leaders and role models that can distinguish the perceived problems from true community issues.</p>
-      <p class="ed-body reveal reveal-d1" style="margin-top:16px"><strong>HSLQ has adopted the phrase "It's Up to Us"</strong> as the organization's members believe that empowering, protecting and preserving community values is a vital step in the revitalization of Huntington Station.</p>
+<!-- CHALLENGES -->
+<section class="section-dark" id="about-deep">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <p class="script-label">For the Youth</p>
+        <h2 class="section-title">HSLQ Challenges</h2>
+        <p class="section-text">The community faces a challenge in keeping education a top priority for the youth and the undereducated. The desire of young people to be educated is often lost to the lure of gang membership. And in the home, making education a priority in the family sometimes takes second place to financial needs. It is important for the community to have visible role models that demonstrate the significance of education and provide understanding of goal attainment for the youth of the community.</p>
+      </div>
+      <div class="reveal-right">
+        <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/About-new-5-20.jpg" alt="HSLQ Community" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- THE SOLUTION — editorial row -->
-<section class="editorial">
-  <div class="ed-row reverse">
-    <div class="ed-media reveal">
-      <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg" alt="HSLQ Solution" loading="lazy">
-    </div>
-    <div class="ed-text">
-      <div class="ed-eyebrow reveal">The Solution</div>
-      <h2 class="ed-heading reveal">Is Up To Us</h2>
-      <p class="ed-body reveal">HSLQ has created various events and programs to engage the community in civic pride, unity and the belief that its residents can make valuable contributions to the community at large. HSLQ is a movement from within the community with the belief that the solution to what ails Huntington Station <strong>"Is Up To Us."</strong></p>
-    </div>
-  </div>
-</section>
-
-<!-- OUR NAME — dark section -->
-<section class="dark-section">
-  <div class="section-inner">
-    <div class="ed-eyebrow reveal">Our Name</div>
-    <h2 class="ed-heading reveal" style="color:var(--white)">Why Call it a "Latin Quarter"?</h2>
-    <p class="ed-body reveal" style="color:rgba(255,255,255,.5);max-width:700px">Huntington Station is a diverse community with a vast array of valuable human experiences. The diversity of the community is one of its major assets. Our efforts are not meant to exclude any residents. We simply aim to repair a stigmatized reputation. It is our belief that if we revitalize the Latino segment of Huntington Station, then the community as a whole will benefit from a well-organized and educated Latino population.</p>
-  </div>
-</section>
-
-<!-- CLEANUP — editorial row -->
-<section class="editorial">
-  <div class="ed-row">
-    <div class="ed-media reveal">
-      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/About-new-5-20.jpg" alt="HSLQ Neighborhood Cleanup" loading="lazy">
-    </div>
-    <div class="ed-text">
-      <div class="ed-eyebrow reveal">Annual Event</div>
-      <h2 class="ed-heading reveal">Neighborhood Cleanup</h2>
-      <p class="ed-body reveal">Volunteers rolled up their sleeves and got to work at the <strong>15th Annual Huntington Station Clean Up!</strong> Thanks to everyone's incredible effort, we cleared trash, refreshed green spaces, and made a real difference in our community.</p>
+<!-- THE SOLUTION -->
+<section class="section-accent">
+  <div class="accent-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg')"></div>
+  <div class="accent-overlay"></div>
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label" style="color:#fff">The Solution</p>
+      <h2 class="section-title">Is Up To Us</h2>
+      <p class="section-text" style="margin:0 auto;color:rgba(255,255,255,.9);max-width:800px">HSLQ has created various events and programs to engage the community in civic pride, unity and the belief that its residents can make valuable contributions to the community at large. HSLQ is a movement from within the community with the belief that the solution to what ails Huntington Station "Is Up To Us."</p>
     </div>
   </div>
 </section>
 
-<!-- TOY DRIVE BENEFIT — editorial row -->
-<section class="editorial">
-  <div class="ed-row reverse">
-    <div class="ed-media reveal">
-      <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/74896545_152427009446690_5444127616141361152_n-1920w.jpg" alt="The Giving Tree Community Art Project" loading="lazy">
-    </div>
-    <div class="ed-text">
-      <div class="ed-eyebrow reveal">Join Us</div>
-      <h2 class="ed-heading reveal">Toy Drive Benefit</h2>
-      <p class="ed-body reveal">The Paramount and Spotlight are teaming up with HSLQ to create a holiday exhibition of painted trees created by our local community. For a minimum <strong>$25 donation</strong> you will receive a wooden tree canvas and supplies to create artwork that will be on display at Spotlight for the entire month of December.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GIVING BACK — Toy Drive detail -->
-<section class="editorial">
-  <div class="ed-row">
-    <div class="ed-media reveal">
-      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/101480-Toy-Drive-Box-Poster-Prints_2025.jpg" alt="2025 Toy Drive Poster" loading="lazy" style="object-fit:contain;background:var(--gray-50)">
-    </div>
-    <div class="ed-text">
-      <div class="ed-eyebrow reveal">Giving Back</div>
-      <h2 class="ed-heading reveal">2025 Toy Drive</h2>
-      <p class="ed-body reveal">Once Friends of HSLQ gathers information, a list is created which is distributed to Friends and members who in turn purchase gifts for these deserving families. Over the years, Friends of HSLQ has collected hundreds of gifts donated to hundreds of families.</p>
-      <p class="ed-body reveal reveal-d1" style="margin-top:16px">Children received toys, books, board games, coats, clothing and most importantly <strong>love and thoughtfulness</strong> from many members of the Huntington Station community.</p>
-      <p class="ed-body reveal reveal-d2" style="margin-top:16px"><strong>Drop Off:</strong> Palacios Law Group / HSLQ Headquarters<br>1399 New York Avenue, Huntington Station</p>
+<!-- COMMUNITY MORALE -->
+<section class="section-dark">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Social-200px-1920w.jpg" alt="HSLQ Community" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+      </div>
+      <div class="reveal-right">
+        <p class="script-label">Community Morale</p>
+        <h2 class="section-title">Role Models</h2>
+        <p class="section-text">The overall community morale has taken a severe blow and the cultural differences have been negatively amplified. A solution to these stigmas lies in the efforts of community leaders and role models that can distinguish the perceived problems from true community issues. HSLQ has adopted the phrase "It's Up to Us" as the organization's members believe that empowering, protecting and preserving community values is a vital step in the revitalization of Huntington Station.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA — Follow on Facebook -->
-<section class="cta-section">
-  <h2 class="reveal">Stay<br>Connected.</h2>
-  <p class="reveal">Follow HSLQ on Facebook to stay up to date with all our events — from Huntington Unity Fun Day to Spring Clean Ups, Easter Basket Drives, and Holiday Toy Drives.</p>
-  <a href="https://www.facebook.com/HSLQ1/" target="_blank" class="cta-btn reveal">Follow Us on Facebook</a>
+<!-- OUR NAME -->
+<section class="section-darker">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label">Our Name</p>
+      <h2 class="section-title">Why Call it a "Latin Quarter"?</h2>
+      <p class="section-text" style="margin:0 auto;max-width:800px">Huntington Station is a diverse community with a vast array of valuable human experiences. The diversity of the community is one of its major assets. Our efforts are not meant to exclude any residents. We simply aim to repair a stigmatized reputation. It is our belief that if we revitalize the Latino segment of Huntington Station, then the community as a whole will benefit from a well-organized and educated Latino population.</p>
+      <div style="margin-top:30px"><a href="#contact" class="btn btn-primary">Join HSLQ</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section-dark" id="events">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left" style="text-align:center">
+        <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/101480-Toy-Drive-Box-Poster-Prints_2025.jpg" alt="2025 Toy Drive" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4);max-width:400px;margin:0 auto">
+      </div>
+      <div class="reveal-right">
+        <p class="script-label">Holiday Event</p>
+        <h2 class="section-title">2025 Annual Toy Drive</h2>
+        <p class="section-text">In the spirit of the holidays, I am reaching out to see if you would be willing to adopt a family for our 16th Annual HSLQ Toy Drive. All of the children in our drive are living below the poverty line, where the parents have a combined income of less than $31,200 a year, usually supporting a family of four.</p>
+        <p class="section-text" style="margin-top:15px">If you are interested in becoming a donor, we kindly ask that you spend at least <strong style="color:#f68623">$75 on each child</strong> as your gifts may be the only ones received by these special children. As we already have over <strong style="color:#f68623">180 children</strong> on our list, kindly indicate how many children you would like to "adopt" and I will send you a wish list.</p>
+        <p class="section-text" style="margin-top:15px"><strong style="color:#fff">DROP OFF LOCATION:</strong><br>Palacios Law Group/HSLQ Headquarters<br>1399 New York Avenue, Huntington Station</p>
+        <p class="section-text" style="margin-top:15px">Happy Holidays!!<br><strong style="color:#fff">Laura Palacios</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOY DRIVE GIVING TREE -->
+<section class="section-darker">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <p class="script-label">Join Us!</p>
+        <h2 class="section-title">Toy Drive Benefit</h2>
+        <p class="section-text">The Paramount and Spotlight are teaming up with the not-for-profit civic organization HSLQ – Huntington Station Latin Quarter – to create a holiday exhibition of painted trees created by you – our local community. For a minimum <strong style="color:#f68623">$25 donation</strong> you will receive a wooden tree canvas and supplies to create artwork that will be on display at Spotlight for the entire month of December.</p>
+      </div>
+      <div class="reveal-right" style="text-align:center">
+        <img src="https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/74896545_152427009446690_5444127616141361152_n-1920w.jpg" alt="The Giving Tree Community Art Project" style="border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANNUAL GIVING -->
+<section class="section-accent">
+  <div class="accent-bg" style="background-image:url('https://lirp.cdn-website.com/98e54640/dms3rep/multi/opt/Hands-back-1920w.jpg')"></div>
+  <div class="accent-overlay"></div>
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label" style="color:#fff">Annual Toy Drive</p>
+      <h2 class="section-title">Giving Back to Our Community</h2>
+      <p class="section-text" style="margin:0 auto;color:rgba(255,255,255,.9);max-width:800px">Once Friends of HSLQ gathers information, a list is created which is distributed to Friends and members who in turn purchase gifts for these deserving families. Over the years, Friends of HSLQ has collected hundreds of gifts which have been donated to hundreds of families. Children received toys, books, board games, coats, clothing and most importantly love and thoughtfulness from many members of the Huntington Station community.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CLEANUP EVENT -->
+<section class="section-dark">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <h2 class="section-title">2025 Annual Neighborhood Cleanup</h2>
+      <p class="section-text" style="margin:0 auto;max-width:800px">Volunteers rolled up their sleeves and got to work at the 15th Annual Huntington Station Clean Up! Thanks to everyone's incredible effort, we cleared trash, refreshed green spaces, and made a real difference in our community.</p>
+    </div>
+  </div>
 </section>
 
 <!-- PHOTO GALLERY -->
-<section class="gallery-section" id="gallery">
-  <div class="gallery-header">
-    <div class="ed-eyebrow">Community In Action</div>
-    <h2 class="reveal">Event<br>Photos.</h2>
-  </div>
-  <div class="gallery-grid">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482959318_1113194847499898_2371757536970194119_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482959787_1113194784166571_7972587459492554689_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal reveal-d1">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482978371_1113194507499932_4423639949342881241_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482984574_1113194540833262_8045199862401473254_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal reveal-d1">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493225490_1100917418734758_3467401419929825534_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493228925_1100916692068164_8330851347163336169_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal reveal-d1">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493263399_1100919815401185_6663422812150142220_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493274087_1100916198734880_1587607446549695778_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal reveal-d1">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493920121_1100916802068153_8625676405787963515_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/494212575_1100918688734631_335050832351246795_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal reveal-d1">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/484179205_1113194567499926_5136429837636341039_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal">
-    <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/484348169_1113194840833232_5549505349843402734_n.jpg" alt="HSLQ Event" loading="lazy" class="reveal reveal-d1">
+<section class="section-darker" id="gallery">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:10px" class="reveal">
+      <p class="script-label">Community In Action</p>
+      <h2 class="section-title">Event Photos</h2>
+    </div>
+    <div class="gallery reveal">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482959318_1113194847499898_2371757536970194119_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482959787_1113194784166571_7972587459492554689_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482978371_1113194507499932_4423639949342881241_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/482984574_1113194540833262_8045199862401473254_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493225490_1100917418734758_3467401419929825534_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493228925_1100916692068164_8330851347163336169_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493263399_1100919815401185_6663422812150142220_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493274087_1100916198734880_1587607446549695778_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/493920121_1100916802068153_8625676405787963515_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/494212575_1100918688734631_335050832351246795_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/484179205_1113194567499926_5136429837636341039_n.jpg" alt="HSLQ Event">
+      <img src="https://irp.cdn-website.com/98e54640/dms3rep/multi/484348169_1113194840833232_5549505349843402734_n.jpg" alt="HSLQ Event">
+    </div>
   </div>
 </section>
 
-<!-- MARQUEE 2 -->
-<div class="marquee" style="background:var(--black)">
-  <div class="marquee-track">
-    <span class="marquee-text">Safe Streets</span>
-    <span class="marquee-text">Unity &amp; Respect</span>
-    <span class="marquee-text">Education Programs</span>
-    <span class="marquee-text">Neighborhood Revitalization</span>
-    <span class="marquee-text">Safe Streets</span>
-    <span class="marquee-text">Unity &amp; Respect</span>
-    <span class="marquee-text">Education Programs</span>
-    <span class="marquee-text">Neighborhood Revitalization</span>
+<!-- FACEBOOK CTA -->
+<section class="section-dark">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <p class="script-label">Past Events</p>
+      <h2 class="section-title">Visit Our Facebook Page!</h2>
+      <p class="section-text" style="margin:0 auto 30px;max-width:700px">Follow <a href="https://www.facebook.com/HSLQ1/" target="_blank">HSLQ on Facebook</a> to stay up to date with all our events and community news! From Huntington Unity Fun Day, Spring Clean Ups, Easter Basket Drives, Holiday Toy Drives and many other community fundraisers.</p>
+      <a href="https://www.facebook.com/HSLQ1/" class="btn btn-primary" target="_blank">Follow Us on Facebook</a>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <div class="contact-form-wrap">
-    <div class="ed-eyebrow reveal">Get Involved</div>
-    <h2 class="ed-heading reveal" style="margin-bottom:32px">Contact Us</h2>
-    <form class="contact-form reveal" action="#" method="POST">
-      <div class="form-row">
-        <input type="text" name="first_name" placeholder="First Name" required>
-        <input type="text" name="last_name" placeholder="Last Name" required>
+<section class="section-darker" id="contact">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <p class="script-label">Interested in Joining?</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+          </div>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone">
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
       </div>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="phone" placeholder="Phone">
-      <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit" class="btn-submit">Submit</button>
-    </form>
-  </div>
-  <div class="contact-info-wrap">
-    <div class="ed-eyebrow reveal">Visit Us</div>
-    <h3 class="reveal">HSLQ Headquarters</h3>
-    <p class="reveal"><strong>1399 New York Avenue,<br>Huntington Station, NY 11746</strong></p>
-    <p class="reveal"><a href="tel:631-673-1000">631-673-1000</a></p>
-    <a href="https://www.facebook.com/HSLQ1/" target="_blank" class="social-link reveal">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-      Follow on Facebook
-    </a>
-    <div class="map-embed reveal">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.8!2d-73.4113!3d40.8407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8289d4e24b7f7%3A0x7d7e5b04a4f6a0e5!2s1399+New+York+Ave%2C+Huntington+Station%2C+NY+11746!5e0!3m2!1sen!2sus!4v1"
-        allowfullscreen="" loading="lazy"></iframe>
+      <div class="reveal-right">
+        <h2 class="section-title" style="font-size:28px">Contact Us</h2>
+        <p style="color:rgba(255,255,255,.75);margin-bottom:5px"><strong style="color:#fff">1399 New York Avenue,<br>Huntington Station, NY 11746</strong></p>
+        <p style="margin-bottom:25px"><a href="tel:631-673-1000" style="color:#f68623;font-size:20px;font-weight:600">631-673-1000</a></p>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.8!2d-73.4113!3d40.8407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8289d4e24b7f7%3A0x7d7e5b04a4f6a0e5!2s1399+New+York+Ave%2C+Huntington+Station%2C+NY+11746!5e0!3m2!1sen!2sus!4v1" width="100%" height="350" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">
-      <a href="#"><img src="https://irp-cdn.multiscreensite.com/98e54640/dms3rep/multi/Logo.png" alt="HSLQ"></a>
-    </div>
-    <div class="footer-top">
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
       <div>
-        <div class="footer-brand">Friends of<br>Huntington Station<br>Latin Quarter.</div>
-        <p class="footer-desc">A not-for-profit civic organization promoting community development, cultural preservation, and youth enrichment since 2010.</p>
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide a community of positive role models, pride in education, safety on our streets and unity between neighborhoods.</p>
+        <div style="margin-top:20px">
+          <a href="https://www.facebook.com/HSLQ1/" target="_blank" class="social-icon" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="footer-nav">
-        <a href="#">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#events">Events</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact Us</a>
-        <a href="https://www.facebook.com/HSLQ1/" target="_blank">Facebook</a>
+      <div>
+        <h3>Contact Info</h3>
+        <p>1399 New York Avenue<br>Huntington Station, NY 11746</p>
+        <p><a href="tel:631-673-1000">631-673-1000</a></p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Photos</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-mission-text">Our mission is to provide a community of positive role models, pride in education, safety on our streets and unity between neighborhoods.</p>
-      <p style="white-space:nowrap;opacity:.3">&copy; 2026 Friends of Huntington Station Latin Quarter</p>
+      <p>&copy; 2026 Friends of Huntington Station Latin Quarter</p>
     </div>
   </div>
 </footer>
 
 <script>
+// Navbar scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)});
+
 // Hamburger
-document.getElementById('hamburger').addEventListener('click',function(){
-  this.classList.toggle('active');
-  document.getElementById('nav-links').classList.toggle('open');
-});
-// Close nav on link click
-document.querySelectorAll('.nav-links a').forEach(function(a){
-  a.addEventListener('click',function(){
-    document.getElementById('hamburger').classList.remove('active');
-    document.getElementById('nav-links').classList.remove('open');
-  });
-});
+const hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navLinks.classList.toggle('open')});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('active');navLinks.classList.remove('open')}));
 
 // Scroll reveal
-var obs=new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}
-  });
-},{threshold:.05,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.15,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>observer.observe(el));
+
+// Active nav link
+const sections=document.querySelectorAll('section[id]');
+const navAnchors=navLinks.querySelectorAll('a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-200)current=s.getAttribute('id')});
+  navAnchors.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+current)});
+});
 </script>
 
 </body>
